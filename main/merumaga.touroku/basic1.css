@@ -1,0 +1,483 @@
+/*ＨＴＭＬの再定義
+---------------------------------------------------------------------------*/
+
+body {
+	background: url(../image/bg.jpg) repeat-x;
+	font: 12px "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
+	margin-bottom: 0px;
+	margin-top: 8px;
+}
+
+ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+a{
+	text-decoration: none;
+	color: #005B5B;
+}
+
+img{
+	border: none;
+}
+
+h1, h2, h3, h5, h5 {
+	margin:0;
+	padding:0;
+	font-weight: normal;
+}
+
+th{
+	font-weight: normal;
+}
+
+/*ＩＤによるボックス化
+---------------------------------------------------------------------------*/
+#wrap{
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#header{
+	width: 100%;
+	position: relative;
+}
+
+#global_contents{
+}
+
+#contents_left{
+	width:210px;
+	float:left;
+}
+
+#contents_right{
+	width:750px;
+	float:right;
+}
+
+#contents_210{
+	width:210px;
+	float:left;
+}
+
+#contents_510{
+	width:510px;
+	float:left;
+}
+
+#contents_240{
+	width:240px;
+	float:right;
+}
+
+#footer{
+	clear: both;
+	width: 100%;
+	background: url(../image/footer_bg.jpg) repeat-x;
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 30px;
+}
+
+/*ヘッダー
+---------------------------------------------------------------------------*/
+
+#header{
+	height:91px;
+	width:960px;
+}
+
+#seo{
+	position: absolute;
+	left: 5px;
+	top: 0px;
+	z-index: 5;
+	overflow: visible;
+}
+
+#seo h1{
+	font-size: 10px;
+	color: #666;
+}
+
+#title{
+	position: absolute;
+	left: 0px;
+	top: 32px;
+	z-index: 5;
+	overflow: visible;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#top_banner{
+	position: absolute;
+	left: 491px;
+	top: 10px;
+	z-index: 5;
+	overflow: visible;
+}
+
+/*上部メニュー
+---------------------------------------------------------------------------*/
+#menu{
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 51px;
+	margin-bottom:15px;
+}
+
+#menu li{
+	float: left;
+	line-height: 51px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 14px;
+}
+
+#menu li.menu_1 a{
+	width: 160px;
+	height: 51px;
+	background: url(../image/menu/menu_1.jpg) no-repeat;
+	display:block;
+	color: #333;
+}
+
+#menu li.menu_1 a:hover{
+	width: 160px;
+	height: 51px;
+	background: url(../image/menu/menu_1.jpg) no-repeat 0px -52px;
+	display:block;
+	color: #fff;
+}
+
+#menu li.menu_2 a{
+	width: 160px;
+	height: 51px;
+	background: url(../image/menu/menu_2.jpg) no-repeat;
+	display:block;
+	color: #333;
+}
+
+#menu li.menu_2 a:hover{
+	width: 160px;
+	height: 51px;
+	background: url(../image/menu/menu_2.jpg) no-repeat 0px -51px;
+	display:block;
+	color: #fff;
+}
+
+
+/*左メニュー
+---------------------------------------------------------------------------*/
+.side_200{
+	width: 200px;
+	border-top: 1px solid #CBD7DE;
+	border-right: 1px solid #CBD7DE;
+	border-left: 1px solid #CBD7DE;
+	margin-bottom:20px;
+}
+
+.side_200 a{
+	display: block;
+	padding-left: 18px;
+	border-bottom: 1px solid #D5DFE5;
+	height: 35px;
+	line-height: 35px;
+}
+
+.side_200 a:hover{
+	color: #FFF;
+	background: #027C91;
+}
+
+.side_200_h{
+	background: url(../image/side_200_h.jpg) no-repeat;
+	height: 50px;
+	width: 200px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	display: block;
+}
+
+
+/*中央コンテンツ
+---------------------------------------------------------------------------*/
+#contents_510{
+	margin-bottom: 40px;
+}
+
+#top_image{
+	margin-bottom:15px;
+}
+
+#global_contents h2{
+	background: url(../image/side_505_h.jpg) no-repeat;
+	text-align: center;
+	height: 50px;
+	width: 505px;
+	line-height: 50px;
+	font-size: 14px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+#global_contents h3{
+	background: url(../image/side_505_h.jpg) no-repeat;
+	text-align: center;
+	height: 50px;
+	width: 505px;
+	line-height: 50px;
+	font-size: 14px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+#global_contents .box_1{
+	width:250px;
+	float: left;
+}
+
+#global_contents .box_2{
+	width:250px;
+	float: right;
+}
+
+#global_contents .box_3{
+	width:250px;
+	clear:both;
+	float: left;
+}
+
+#global_contents .box_4{
+	width:250px;
+	float: right;
+}
+
+#global_contents h4{
+	text-align:center;
+	margin-left: 20px;
+	background: #008CA5;
+	height: 25px;
+	width: 200px;
+	color: #FFF;
+	line-height: 25px;
+	font-size: 13px;
+}
+
+.ranking ul{
+	margin-top: 8px;
+}
+
+.ranking li{
+	margin-left: 20px;
+	border-bottom: 1px solid #D5DFE5;
+	width: 200px;
+}
+
+.ranking li a{
+	display: block;
+	line-height: 30px;
+	background:  url(../image/mark.gif) no-repeat 20px;
+	padding-left: 35px;
+}
+
+.ranking li a:hover{
+	background: #008CA5 url(../image/mark.gif) no-repeat 20px;
+	color: #FFF;
+}
+
+.ranking img{
+	text-align: center;
+	margin-left: 20px;
+}
+
+.box_5{
+	margin-bottom: 10px;
+}
+
+/*右メニュー
+---------------------------------------------------------------------------*/
+#side_234{
+	width: 234px;
+	float:right;
+}
+
+.side_box_1{
+	border-top: 1px solid #CBD7DE;
+	border-right: 1px solid #CBD7DE;
+	border-left: 1px solid #CBD7DE;
+	margin-bottom:10xp;
+}
+
+.side_box_1 ul{
+	margin-bottom:10xp;
+}
+
+.box1{
+	height:119px;	
+	border-bottom: 1px solid #D5DFE5;
+}
+
+h5{
+	text-align: center;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	font-size: 14px;
+}
+
+.image{
+	float:left;
+	height: 49px;
+	width: 90px;
+	margin-left: 5px;
+	margin-right: 14px;
+}
+
+.box1 p{
+	font-size: 10px;
+	margin-right: 5px;
+}
+
+.box2{
+	height:65px;
+	border-bottom: 1px solid #D5DFE5;
+	margin-top: 7px;
+}
+
+.box2 h5{
+	margin-top: 2px;
+	margin-bottom: 2px;
+	font-size: 13px;
+	text-align:left;
+}
+
+.box2 p{
+	font-size: 10px;
+	margin-right: 5px;
+	margin-top: 0px;
+	line-height: 98%;
+}
+
+.side_234_h{
+	background: url(../image/side_234_h.jpg) no-repeat;
+	height: 50px;
+	width: 234px;
+	font-weight: bold;
+	line-height: 50px;
+	display: block;
+	text-align: center;
+}
+
+.section{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.section .s_banner_234{
+	margin-top: 10px;
+	text-align:center;
+}
+
+
+/*右メニュー　ピックアップ
+---------------------------------------------------------------------------*/
+
+.box3{
+	height:65px;
+	border-bottom: 1px solid #D5DFE5;
+	margin-top: 7px;
+}
+
+.box3 h5{
+	margin-top: 2px;
+	margin-bottom: 2px;
+	font-size: 13px;
+	text-align:left;
+}
+
+.box3 p{
+	font-size: 10px;
+	margin-right: 5px;
+	margin-top: 0px;
+	line-height: 110%;
+}
+
+
+.image_2{
+	float:left;
+	height: 58px;
+	width: 58px;
+	margin-left: 5px;
+	margin-right: 10px;
+}
+
+/*右メニュー　自動売買ランキング
+---------------------------------------------------------------------------*/
+
+.image_3{
+	float:right;
+	height: 58px;
+	width: 58px;
+	margin-left: 5px;
+	margin-right: 10px;
+}
+
+
+/*グーグルアドセンス
+---------------------------------------------------------------------------*/
+
+.bar{
+	width:468px;
+	height:15px;
+	text-align:center;
+	margin-bottom: 3px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.gad_text{
+	width:468px;
+	height:60px;
+	text-align:center;
+	margin-bottom: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.gad_text_2{
+	width:336px;
+	height:280px;
+	text-align:center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+/*その他
+---------------------------------------------------------------------------*/
+
+.center{
+	text-align: center;
+}
+
+.font_red{
+	text-align: center;
+	color: #F00;
+}
+#wrap #global_contents #contents_right #contents_510 .468_60 {
+	background: #009;
+}
+
+#s_link{
+	margin-bottom: 10px;
+}

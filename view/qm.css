@@ -1,0 +1,402 @@
+@charset "utf-8";
+/********************************
+*
+* Question Maker css for rigakuryouhoushi
+*
+* created by Hommymoco.com
+********************************/
+
+/*
+* 試験セクションのくくり（本処理用）
+*/
+#qm-section{
+}
+
+a{text-decoration:none;}
+
+/*
+* 試験セクションのくくり（画面調整用）
+*/
+#qm-questions-area{
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+	font-size: 13px;
+	text-align:left;
+	width: 640px;
+	margin-bottom: 2em;
+}
+
+/*
+*試験タイトルエリア
+*/
+#qm-title-area{
+	background:#d5dfe5;
+	padding: 4px;
+	
+	/* HTML5対応 角丸*/	
+	border: solid #005b5b;
+	border-radius:6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+    margin: 1em 0 1em 0;
+}
+
+/*
+*試験タイトルCSS定義
+*/
+#qm-title{
+	font-size:18px;
+	color: #330;
+	margin: 0 2em auto;
+	
+	float:left;	
+}
+
+/*
+*問題数CSS定義
+*/
+#qm-num-of-question{
+	font-size:18px;
+	color: #855;
+	margin: 0 2em auto;
+	padding-left: 1em;
+}
+
+
+/*
+*　採点結果エリア
+*/
+#qm-point-area{}
+
+/*
+*　試験説明分
+*/
+div#qm-exam-description{
+	margin: 0 0 0 3em;
+	padding:0;
+}
+
+/*
+*　採点結果文言
+*/
+.qm-verify-comment{
+	float:left;
+	margin:0 1em 0 1em;
+	padding:0;
+}
+
+/*
+*　採点結果
+*/
+.qm-ans-point{
+	margin:0;
+	padding:0;
+}
+
+
+/*
+*設問エリアCSS定義
+*/
+ul.qm-exam{
+	list-style:none;
+}
+
+/*
+*単位設問CSS定義
+*/
+li.qm-exam{
+	background: #fffafa;
+	/* 角丸処理あり下記 角丸処理 参照 */
+}
+
+
+/*
+*問番号CSS定義
+*/
+.qm-question-number{
+	color:#f0ffff;
+	font-weight: bold;
+	background-color:#005B5B;
+	padding: 2px;
+	/* 角丸処理あり下記 角丸処理 参照 */	
+}
+
+/*
+*設問本体CSS定義
+*/
+.qm-question-body{
+	padding: 0 0 1em 1em;
+}
+
+/*
+*設問本文CSS定義
+*/
+.qm-a-question{
+	font-weight:bold;
+}
+
+/*
+*設問選択肢CSS定義
+*/
+p.qm-question-branch{
+	margin:0 0 0 1em;
+	padding:0;
+	width: 90%;
+}
+
+
+
+/*
+*ページ処理エリアCSS定義
+*/
+.qm-pagination{
+	display: block;
+	text-align:center;
+}
+
+
+.qm-page{
+	width: 100px;
+	height: 50px;
+	background:#333;
+	float:left;
+	text-align:center;
+	margin: 0px 5px 15px 5px;    
+	/* 角丸処理あり下記 角丸処理 参照 */
+}
+
+
+
+/*
+*ページ処理次へエリアCSS定義
+*/
+.qm-page-next{}
+
+/*
+*ページ処理前へエリアCSS定義
+*/
+.qm-page-prev{}
+
+/*
+*ページ処理なしCSS定義
+*/
+.qm-page-none{}
+
+/*
+*ページ処理解答ページ向けCSS定義
+*/
+.qm-page-finish{}
+
+/*
+*ページ処理解答ページ向けCSS定義
+*/
+.qm-page-retry{}
+div.qm-page-retry{
+	padding-top: 1em;
+	color:#CCC;
+	font-weight: bold;
+}
+
+/*
+*ページ処理解答ページ向けCSS定義
+*/
+.qm-page-home{}
+div.qm-page-home{
+	padding-top: 1em;
+	color:#CCC;
+	font-weight: bold;
+}
+
+
+/*
+*ページ送りボタンCSS定義
+*/
+.qm-bt-continue{
+	background:#333;
+
+	width: 100px;
+	height:50px;
+	/* 角丸処理あり下記 角丸処理 参照 */
+}
+
+/*
+*
+*/
+.qm-bt-caption{
+	display:block;
+	font-size:14px;
+	font-weight:bold;
+	color:#e8e8ff;
+	position:relative;
+	top:-34px;
+}
+
+/*
+* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+*　　解説用設定
+* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+*/
+
+/*
+*	解説文言
+*/
+.qm-ans-text{color:#037}
+
+/*
+*	解説見出し
+*/
+.qm-qutstion-exposition-title{ font-weight: bold; color:#333}
+
+.qm-exposition{ color:#009}
+
+/*
+*	正解用表示設定
+*/
+.qm-indc-correct{}
+/*
+*	不正解用表示設定
+*/
+.qm-indc-incorrect{ color:#ff0000}
+/*
+*　【不正解 未選択】
+*/
+.qm-indc-non-chosen{ color:#ff0000}
+/*
+*　【不正解 多選択】
+*/
+.qm-indc-over-choise{ color:#ff0000 }
+/*
+*　【不正解 少選択】
+*/
+.qm-indc-below-choise{color:#ff0000 } 
+
+
+
+/*
+*　正解選択肢設定
+*/
+.qm-question-branch-correct{
+	padding:0;
+	background: #ffe;
+	width:90%;
+	
+	float:left;
+	/* 角丸処理あり下記 角丸処理 参照 */
+}
+
+/*
+*　不正解選択肢設定
+*/
+.qm-question-branch-incorrect{
+	padding:0;
+	background: transparent;
+	width:90%;
+	float:left;
+}
+
+/*
+*　正解○×用定義
+*/
+.qm-question-correct{
+	font-weight:bold;
+	color:blue;
+	margin-right:0;
+	float:left;
+}
+
+/*
+*　不正解○×用定義
+*/
+.qm-question-incorrect{
+	font-weight:bold;
+	margin-right:3px;
+	color:red;
+	float:left;
+}
+
+
+/*
+*float left
+*/
+.qm-fleft{ float:left}
+
+/*
+*float left
+*/
+.qm-clear{ clear:both}
+
+/*
+*	セパレータ
+*/
+hr.qm-sep-line{ 
+    border: 0;
+    border-bottom: 2px dotted #578;
+    background: transparent;
+	width: 96%;
+	margin-left: 0;
+}
+
+
+/*
+* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+*　　オプション・飾り付け
+* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+*/
+
+/*
+* マーク
+*/
+.qm-mark{ color:#588}
+
+/*
+* 設問の先頭マーク
+*/
+.qm-q-mark{
+	color:#ff7c19;
+	font-size: large;
+}
+
+
+/*
+* 角丸処理
+*/
+.li.qm-exam,
+.qm-question-number,
+.qm-question-branch-correct,
+.qm-radius-5
+{
+	border-style:none;
+	border-radius:5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+
+/*
+* 角丸処理
+*/
+.qm-page,
+.qm-bt-continue,
+.qm-radius-10
+{
+	border-style:none;
+	border-radius:10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+
+/* HTML5対応 グラデーションパターン*/	
+.grad01{
+background: #333; /* Old browsers */ /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */
+background: linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
+}
+
+/* HTML5対応 グラデーションパターン*/	
+.grad02{
+background: #0e0e0e; /* Old browsers */ /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0e0e0e), color-stop(33%,#7d7e7d), color-stop(66%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #0e0e0e 0%,#7d7e7d 31%,#7d7e7d 66%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */
+background: linear-gradient(top,  #0e0e0e 0%,#7d7e7d 31%,#7d7e7d 66%,#0e0e0e 100%); /* W3C */
+}

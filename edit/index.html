@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link  rel="stylesheet" href="index.css" media="screen,print"  />
+    <!-- Dual licensed under the MIT and GPL licenses  -->
+    <script type="text/javascript" src="jquery-1.7.1.min.js" ></script>
+	<!-- its js is necessary for current page -->
+    <script type="text/javascript" src="index.js" ></script>
+
+	<title>Question Maker for Rigakuryouhoushi</title>
+</head>
+
+<body>
+
+	<div id="inner-body">
+    
+    	<form action="../qmApp/create.php" method="post"  id="main-form">
+<!--    	<form action="/qmApp/create.php" method="post"  id="main-form">-->
+        
+        <div id="titleCaption" >Question Maker for Rigakuryouhoushi</div>
+
+		<!-- メインの設問データエリア -->  
+    	<div id="question-section" class="sections">
+        
+            <div class="q-item clear-float">
+			<h3 class="item-subject">カテゴリ名</h3>
+                <span class="item-parts">
+                    <input type="text" class="clear-item item-parts  item-w" name="catID">
+                    <input type="button" id="clear-catID" class="bt-clear"  value="消去"  />
+                    <span>※半角英数</span>
+                </span>
+            </div>
+ 
+            <div class="q-item clear-float">
+			<h3 class="item-subject">ID</h3>
+                <span class="item-parts">
+                    <input type="text" class="clear-item item-parts  item-w" name="examID">
+                    <input type="button" id="clear-examID" class="bt-clear"  value="消去"  />
+                    <span>※重複しない通し番号</span>
+                </span>
+            </div>
+ 
+             <div class="q-item clear-float">
+			<h3 class="item-subject">1ページ中の問数</h3>
+                <span class="item-parts">
+                    <input type="text" class="clear-item item-parts  item-w" name="parPage">
+                    <input type="button" id="clear-parPage" class="bt-clear"  value="消去"  />
+                </span>
+            </div>
+ 
+
+       
+            <div class="q-item clear-float">
+			<h3 class="item-subject">選択肢の数Ｎ</h3>
+                <span class="item-parts">
+                <select class="clear-item item-parts item-w" name="noBranch">
+                    <option value=2>2択</option>
+                    <option value=3>3択</option>
+                    <option value=4>4択</option>
+                    <option value=5>5択</option>
+                    <option value=6>6択</option>
+                    <option value=7>7択</option>
+                </select>
+                </span>
+            </div>
+        
+            <div class="q-item clear-float">
+                <h3 class="item-subject">ページのタイトル</h3>
+                <span class="item-parts">
+                    <input type="text" class="clear-item item-parts  item-w" name="pageTitle">
+                    <input type="button" id="clear-pageTitle" class="bt-clear"  value="消去"  />
+                </span>
+            </div>
+
+            <div class="q-item clear-float">
+                <h3 class="item-subject">設問の説明文</h3>
+				<span class="item-parts">
+                	<input type="text" class="clear-item item-parts item-w" name="qComment">
+                    <input type="button" id="clear-qComment" class="bt-clear"  value="消去"  />
+                 </span>
+            </div>
+
+
+
+
+            <div class="q-item clear-float">
+	                <h3 class="item-subject">設問・選択肢データ<br />
+                	<p class="cap01">設問はスペース行で設問を区切っています</p>
+                	<p class="cap01">１設問は問題文(1行目)＋選択肢(2行目以降)となります</p>
+                	<p class="cap01">複数回答の場合、問題文の最後に&lt;数&gt;としてください。数の分が回答数になります</p>
+					<p class="cap01">最初の選択肢が正解になります。複数の場合は上から&lt;数&gt;の分が正解になります。</p>
+                	<p class="cap01">改行を行いたいときは&lt;br/&gt;タグを使用して折り曲げてください</p>
+                	<p class="cap01">画像を表示したいときは&lt;img&gt;タグを使用してください</p>
+                </h3>
+                    <span class="item-parts">
+                        <textarea class="clear-item item-parts item-w" name="questions"></textarea>
+                        <input type="button" id="clear-questions" class="bt-clear"  value="消去"  />
+                    </span>
+            </div>    
+            <div class="q-item clear-float">
+                <h3 class="item-subject">問題の出題方法：</h3>
+				<span class="item-parts">
+                    <select class="item-parts item-w" name="isRandom">
+                        <option value="1" >問題の順番を毎回ランダムにする</option>
+                        <option value="0">問題の順番を入れ替えない</option>
+                    </select>
+               </span>
+            </div>
+
+            <div class="q-item clear-float">
+                <h3 class="item-subject">出題する設問数：</h3>
+				<span class="item-parts">
+		        	<input type="hidden" value="dummy" class="question" name="hnoq"/>
+                	<input type="text" class="clear-item item-parts item-wty" name="noq">
+                    <span class="noq label-1">/ 0</span>
+				</span>
+			</div>
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- 解説のオプション -->
+        <div id="description-section"  class="sections ">
+        
+            <div class="d-item clear-float" id="description-textarea">
+                <h3 class="item-subject">解説：<br />
+                	<br />
+                	<p class="cap01">解説は1問につき1行で書いてください。</p>
+                	<p class="cap01">改行や画像を表示したいときは設問と同じ方法で可能です</p>
+                </h3>
+				<span class="item-parts">
+    	            <textarea class="clear-item item-parts description"  name="description"></textarea>
+                <span  style="padding-top:.7em; "><input type="button" value="消去" class="bt-clear"  id="clear-description" /></span>
+				</span>
+            </div>
+            
+        </div><!-- End of description section -->
+<!-- ------------------------------------------------------------------------------------------------------ -->
+        
+
+
+        
+        
+<!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- 	submit -->
+        <div id="toolbox">
+        	<input type="hidden" value="" id="output" name="output"/>
+        	<input type="hidden" value="" id="extparam" name="extparam"/>
+        	<div class="tb-submit"><input type="submit" value="確認"  id="q-submit-button"/></div>
+        	<div class="tb-box-1">
+<!--                <div class="tb-fileout"><input type="button" value="ファイル出力用ページへ"  id="fileout-button"/></div> -->
+                <div class="tb-init"><input type="button" value="初期化"  id="init-button" /></div>
+			</div>
+        </div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+        
+    </form>
+    </div>
+    <div id="other-section"></div>
+</body>
+</html>

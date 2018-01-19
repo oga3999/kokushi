@@ -1,0 +1,302 @@
+@charset "utf-8";
+/**********************************
+
+	設問生成ページスタイルシート
+	index.css
+	
+**********************************/
+*{margin:0; padding:0}
+body{	font:menu;	text-align:center;	margin-top:-1em;}
+h2{margin:0;	padding:0;}
+
+.hidden{display:none}
+
+/***
+
+	大枠
+
+***/
+#inner-body{
+	margin:0 auto;
+	width:1024px;
+	text-align:left;
+	margin-bottom: 3em;
+}
+
+ul{ list-style: none }
+
+.float-left{float:left;}
+.float-right{	float:right;}
+.clear-float{	clear:both;}
+.sections{	padding-bottom: 1em;}
+.ML1{margin-left:1em}
+.ML2{margin-left:2em}
+.ML3{margin-left:3em}
+.PL1{padding-left:1em}
+.PL1-5{padding-left:1.5em}
+.PL2{padding-left:2em}
+.PL5{padding-left:5em}
+.PL10{padding-left:10em}
+.PR1{padding-right:1em}
+.PR1-5{padding-right:1.5em}
+.PR2{padding-right:2em}
+.PR3{padding-right:3em}
+.PR3-5{padding-right:3.5em}
+.PR4{padding-right:4em}
+.PR5{padding-right:5em}
+.PR10{padding-right:10em}
+.PT1{padding-top:1em}
+
+.spacer{
+	height: 1em;
+}
+
+.bt-clear{
+	width: 4em;
+}
+
+/*　補助キャプション用設定　*/
+.cap01{
+	margin: 0.5em 1em 0px 1em;
+	font-size:12px;
+	font-weight:normal;
+}
+
+
+#titleCaption{
+	background:#333;
+	color:#CCC;
+	font-size: 24px;
+	font-weight:bold;
+	padding: 1.4em 1em 0.8em 1.2em;
+}
+
+/***
+出題セクション
+***/
+#question-section{
+	background:#f0f0f0;
+	padding-top: 1em;
+}
+
+/***
+解説セクション
+***/
+#description-section{	
+	background:#f0f0f0;
+	padding-bottom: 0;
+}
+
+#description-textarea{
+	padding-bottom:3em;
+}
+
+
+/***
+	結果セクション
+***/
+#result-section{background:#f0f0f0;}
+
+
+/*
+	ツールボックス
+*/
+#toolbox{
+	background:#c8c8c8;
+	position:fixed;
+	width: 100%;
+	height: 2em;
+	text-align:center;
+	padding:1em;
+	bottom:0;
+	left:0;
+}
+
+#q-submit-button{ width:5em;}
+#init-button{width: 5em;}
+
+/* submit 設定 */
+.tb-submit{}
+
+/* ツールボックスのサブボックス*/
+.tb-box-1{}
+
+/* ファイル出力用 ボタン*/
+.tb-fileout{
+	position:absolute;
+	right: 10em;
+	top: 1em;
+}
+/* ツールボックス用初期化ボタン */
+.tb-init{
+	position:absolute;
+	right: 3em;
+	top: 1em;
+}
+
+
+/*
+	各種アイテム用横幅定義
+*/
+/* width */
+.item-w{width: 32em;}
+/* middle  */
+.item-wm{width: 24em;}
+/* middle short  */
+.item-wms{width: 15em; float:left}
+/* short */
+.item-ws{width: 11em;}
+.item-ws1{width: 12em;}
+/* tiny */
+.item-wty{width: 4em;}
+
+/* 	色指定用 テキストボックス */
+.col-w{ width:70px; }
+
+.pos-right{position:inherit;	right:1em;}
+
+/*
+	テキスト入力欄共通設定
+*/
+input[type="text"]{}
+
+.label-1{	font-size:18px;font-weight:bolder;}
+.label-2{	font-size:16px;font-weight:normal;}
+
+/*
+	文字の大きさをノーマルに戻す
+*/
+.txt-normal{	font-size:16px;	font-weight:normal;}
+
+
+/*
+	各入力アイテムの項目名設定
+*/
+.item-subject{
+	font-size:20px;
+	font-weight:bold;
+/*	margin:0px;
+	padding-left: 1em;
+	padding-top: .5em;
+*/	float:left;
+	width: 12em;
+}
+
+/*
+	各入力アイテムの設定
+*/
+.item-parts{
+/*	margin-top:1em;
+	margin-bottom: 0px;
+*/}
+
+/*
+	テキストエリア用共通設定
+*/
+textarea.item-parts{
+	width: 32em;
+	height: 300px;
+}
+
+/*
+	各入力アイテム枠の設定
+*/
+div.q-item{
+	margin: 1em 0 1.5em 2em;
+}
+div.d-item{
+	margin: 0 0 1.5em 2em;
+}
+
+/*
+　見本(仮)ウィンドウ設定
+*/
+.window-effect{}
+div.window-question-params{
+	margin-top:1em;
+}
+
+span.window-items{
+	padding-right: 7px;
+}
+
+.window-title{
+	background:#eee;
+	width:auto;
+	padding:0;
+}
+.window-item{}
+.window-result{}
+
+.window-frame{
+	border:1px solid;
+	background:#fff;
+	padding:0;
+	margin:0;
+}
+
+ul.window-items-params{
+	padding-top: 1em;
+	background:#d8d8d8;
+}
+
+li.window-items-params{
+	padding:.5em;
+}
+
+div.window-items-params{
+	float:left;
+}
+
+.window-items-params-bt{
+	margin-left: 1em;
+	margin-top:1em;
+	width: 1.5em;
+	padding-left:0px;
+}
+
+.window-description{}
+div.window-description{}
+ul.window-description-params{
+	height: 6em;
+	padding-bottom: 1em;
+	margin:0;
+}
+
+
+ul.window-result-params{
+	height: auto;
+	padding-bottom: 1em;
+	margin:0;
+}
+
+
+/* 個別 */
+
+/*　目標達成時処理 */
+.next-action{
+	padding-top: 1em;
+}
+
+.branch-landscape{float:left;padding-left:1em;}
+.branch-portrait{}
+/*.branch-portrait{clear:both;text-align:left;padding-left:3em;}*/
+
+/*
+	確認用パラメータ設定
+*/
+.question-frame{}
+.question-params-pageTitle{}
+.question-params-chart{}
+.question-params-firstQuestion{}
+.question-params-branches{}
+.question-params-branch{}
+
+.question-params-tof{}
+.question-params-noq{text-align:right; padding-right:8px}
+
+
+table{ overflow:hidden;width:100%}
+td.question-params-noq{ width:2em; overflow:hidden}
+
+
