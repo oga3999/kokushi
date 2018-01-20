@@ -1170,7 +1170,7 @@ margin: auto;
 
 #footer{
 	clear: both;
-	padding-top: 30px;
+	padding: 20px 0px;
 	border-bottom: 1px solid #000; /*フッターの最下部のボーダーの指示*/
 	background: url(../images/common/bg-dot.png) #333; /*フッター全体の背景を指定*/
 	color: #fff; /*文字色の指定*/
@@ -1230,7 +1230,7 @@ p.accessmap{
 
 #footer .footer-menu ul{
 	float: left;
-	width: 42%;
+	width: 100%;
 	margin-right: 5%;
 	padding: 1%;
 }
@@ -1420,19 +1420,105 @@ dl.search-box,
 -------------------------------------------------------------*/
 
 
-/* レスポンシブ */
-.bg-light {    
-    background: url(../images/common/bg-dot.png) #333; 
+/* レスポンシブ化作業用CSS */
+div.pre {
+  background: red;
+  margin:5px auto;
+  height: 50px;
+  width: 30%;
 }
 
+a.navbar-brand {
+  color: #fff;
+  font-weight: bold;
+}
+
+a .navbar-brand:hover {
+  color: #f60;
+}
+
+.navbar-toggler {
+  border-color: #fff;
+  width: 100%;
+}
+.btn-div {
+  width: 100%;
+}
+
+.fa.fa-bars {
+  color: #fff;
+}
+
+.footer-box {
+  position: relative;
+  text-align: center;
+  width: 80%;
+  margin: 0px auto;
+  margin-bottom: 10px; 
+  border-bottom: 1px solid #fff;
+}
+
+p.footer-btn-title {
+  color: #fff;
+}
+
+/*navを中央表示*/
+.navbar-nav {
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
+  float: none;
+}
+
+.navbar-brand {
+  margin: 0 auto;
+}
+
+/*nav背景統一*/
+nav.navbar,
+#navbarNav {
+  background: url(../images/common/bg-dot.png) #333;
+}
+
+/* レスポンシブ */
 @media(min-width:992px){
-    .phone-brand{
-        display: none;
-    }
+  .phone-brand,
+  .btn-div {
+      display: none;
+  }
+}
+
+@media(min-width:544px){
+  .phone-brand br {
+    display: none;
+  }
+  .btn-div {
+    margin: 0 auto;
+    width: 70%;
+  }
 }
 
 @media(max-width:992px){
-    #header-title{
+    #header-title,
+    #header-in {
         display: none;
     }
+
+    #top #top-in #top-menu {
+      display: block;
+    }
+
+    #global-nav #menu li {
+      width: 25%;
+    }
+}
+
+@media(max-width:544px){
+  #global-nav #menu li {
+    width: 50%;
+  }
+
+  .copyright {
+    font-size: 10px;
+  }
 }
