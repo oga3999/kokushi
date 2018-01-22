@@ -12,10 +12,10 @@
     <meta name="GENERATOR" content="JustSystems Homepage Builder Version 16.0.10.0 for Windows" />
     <!--[if IE]><meta http-equiv="imagetoolbar" content="no" /><![endif]-->
 
-    <!-- ↓Bootstrapとfont-awesomeの追加 -->
+    <!--① ↓Bootstrapとfont-awesomeの追加 -->
     <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css" >
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
-    <!-- ↑Bootstrapとfont-awesomeの追加 -->
+    <!--① ↑Bootstrapとfont-awesomeの追加 -->
     <link rel="stylesheet" href="../css/common.css" type="text/css" media="all" />
     <link rel="stylesheet" href="../css/layout.css" type="text/css" media="all" />
     <link rel="stylesheet" href="../css/design.css" type="text/css" media="all" />
@@ -54,9 +54,13 @@
         </div>
       </div>
 
+<!--↓⑦新しいグローバルナビを追加-->
       <div id="global-nav">
         <nav class="navbar navbar-expand-lg ">
+<!--                                                                        ↓⑭<br/>を追加-->
           <a class="navbar-brand phone-brand" href="../">理学療法士・作業療法士 <br/> 国家試験対策　WEBで合格！</a>
+<!--                                                                        ↑⑭<br/>を追加-->
+
             <div class="btn-div">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
@@ -92,10 +96,11 @@
             </div>
         </nav>
       </div>
+<!--↑⑦新しいグローバルナビを追加-->
 <!--▲ヘッダー-->
 
 
-
+<!--↓⑥古いグローバルナビを削除-->
 <!--▼グローバルナビ-->
 <!--
     <div class="container">
@@ -119,6 +124,7 @@
     </div>
 -->
 <!--▲グローバルナビ-->
+<!--↑⑥古いグローバルナビを削除-->
 
 
 <!--main-->
@@ -140,11 +146,16 @@
   </div>
 <!--▲パン屑ナビ-->
 
-<p>hoge</p>
+
 <!--▽メイン＆サブ-->
+<!--↓⑨containerとrowのdivを追加-->
   <div class="container">
     <div class="row">
+<!--↑⑨containerとrowのdivを追加-->
+<!--↓⑩col-md-8をmain-contentやtitle_strageを囲うように追加-->
       <div class="col-md-8">
+<!--↑⑩col-md-8をmain-contentやtitle_strageを囲うように追加-->
+
 
 <!--▽メインコンテンツ-->
         <div class="tile_storage">
@@ -207,7 +218,9 @@
 
             </div>
         </div><!-- /.tile_storage -->
+<!--↓⑩メインコンテンツの上にcol-md-8の</div>を追加-->
       </div><!-- col-md-8 -->
+<!--↑⑩メインコンテンツの上にcol-md-8の</div>を追加-->
 <!--△メインコンテンツ-->
 
 
@@ -215,15 +228,22 @@
 
 
 <!--▼サイドバー-->
+<!--⑪↓ サイドバーの一番外側にcol-md-4のdivを追加-->
   <div class="col-md-4">
+<!--⑪↑ サイドバーの一番外側にcol-md-4のdivを追加-->
+
       <div class="tile_storage">
         <dl id="sidebar" class="sub-column">
+<!--            ↓⑫サイドバーテキストの削除-->
+<!--            <dt class="sidebar-btn">サイドバー</dt>-->
+<!--            ↑⑫サイドバーテキストの削除-->
           <dd id="sidebar-in">
 
 
 
 
 <!--メニュー-->
+<!--↓⑧問題一覧があったら削除-->
 <!--
 <div class="contents">
 <h3>問題一覧</h3>
@@ -262,6 +282,7 @@
           </ul>
         </div>
 -->
+<!--↑⑧問題一覧があったら削除-->
 <!--/メニュー-->
 
 
@@ -284,6 +305,7 @@
 </div>
 <!-- end TweetsWind code -->
 
+<!--③ここをコピペして、sidebar内へ-->
 <div class="content">
   <div class="area01">
     <h3>facebookでも問題配信中</h3>
@@ -292,15 +314,18 @@
     </div>
   </div>
 </div>
+<!--③ここをコピペして、sidebar内へ-->
 
 
 
 <!--/conts--><!--▲サイドバー--></dd>
       </dl>
-    </div>
     </div><!-- /.tile_storage -->
-    </div><!-- col-md-8 -->
+    </div><!-- col-md-4 -->
+<!-- ↓⑨サイドバーも囲うようにcontainerとrowの</div>を追加 -->
     </div><!-- row -->
+    </div><!-- container -->
+<!-- ↑⑨サイドバーも囲うようにcontainerとrowの</div>を追加 -->
     </div>
 <!--/main-in-->
 
@@ -312,6 +337,7 @@
 
 <!--/アドレスエリア-->
 
+<!--↓④古いフッターを削除-->
 
 <!--フッターメニュー-->
 <!-- <div class="area03">
@@ -355,11 +381,14 @@
         </div>
 </div> -->
 <!--/フッターメニュー-->
+<!--④↑古いフッターを削除-->
 
+        
+<!--↓⑤新しいフッターを追加-->
 <!--フッターメニュー-->
 <div id="footer">
 <div id="footer-in">
-
+<div class="container">
 <div class="row">
   <div class="col-6 col-sm-6 col-md-3">
     <a href="../">
@@ -449,17 +478,15 @@
     </div>
   </div>
 </div>
+</div>
+</div>
+</div>
 <!--/フッターメニュー-->
-
-</div>
-
-
-</div>
-</div>
+<!--↑⑤新しいフッターを追加-->
 
 <!--▲フッター-->
 
-
+<!--↓⑬トップメニューを削除-->
 <!--▼トップメニュー-->
 <!-- <div id="top">
 <div id="top-in">
@@ -472,6 +499,7 @@
 </div>
 </div> -->
 <!--▲トップメニュー-->
+<!--↑⑬トップメニューを削除-->
 
 
 <!--コピーライト-->
@@ -480,7 +508,6 @@
 </div>
 <!--/コピーライト-->
 
-    </div>
 </div>
 <!--▼ページの先頭へ戻る-->
 <p class="page-top"><a href="#container">このページの先頭へ</a></p>
@@ -513,9 +540,10 @@
 </script>
 <!-- /NINJA ANALYZE -->
  <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <!--② Bootstrapを使うためのscript -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="../css/bootstrap/js/bootstrap.min.js"></script>
+   <!--② Bootstrapを使うためのscript -->
 </body>
 </html>
