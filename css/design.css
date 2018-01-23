@@ -1483,7 +1483,8 @@ nav.navbar,
 /* レスポンシブ */
 @media(min-width:992px){
   .phone-brand,
-  .btn-div {
+  .btn-div,
+  .facebook-phone {
       display: none;
   }
 }
@@ -1524,5 +1525,14 @@ nav.navbar,
 
   .copyright {
     font-size: 10px;
+  }
+  
+  .facebook-pc {
+  	display: none;
+  }
+  
+  .facebook-phone {
+  	display: block;
+  	text-align: center;
   }
 }
