@@ -1511,6 +1511,10 @@ nav.navbar,
     #global-nav #menu li {
       width: 25%;
     }
+    
+    #breadcrumbs {
+    	display: none;
+    }
 }
 
 @media(max-width:544px){
