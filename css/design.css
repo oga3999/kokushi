@@ -909,8 +909,8 @@ margin: auto;
 
 .sub-column h3{
 	padding: 0.7em;
+	margin-bottom: 5px;
 	border: 1px solid #959595; /*サイドバー見出しの枠線*/
-	border-bottom: 4px solid #a6a6a6; /*見出しの上部の線*/
 	background: url(../images/common/bg-dot.png) #333; /*背景にドットの透過画像*/
 	color: #fff;
 	font-weight: bold;
@@ -1462,6 +1462,15 @@ p.footer-btn-title {
   color: #fff;
 }
 
+.content {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.twitter-follow-button {
+	margin: 5px;
+}
+
 /*navを中央表示*/
 .navbar-nav {
   margin: 0 auto;
@@ -1484,7 +1493,8 @@ nav.navbar,
 @media(min-width:992px){
   .phone-brand,
   .btn-div,
-  .facebook-phone {
+  .facebook-phone,
+  .twitter-phone {
       display: none;
   }
 }
@@ -1534,5 +1544,13 @@ nav.navbar,
   .facebook-phone {
   	display: block;
   	text-align: center;
+  }
+  
+  .twitter-pc {
+  	display: none;
+  }
+  
+  .twitter-phone {
+	display: block;
   }
 }
