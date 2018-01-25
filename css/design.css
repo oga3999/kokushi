@@ -1493,14 +1493,14 @@ nav.navbar,
 @media(min-width:992px){
   .phone-brand,
   .btn-div,
-  .facebook-phone,
   .twitter-phone {
-      display: none;
+    display: none;
   }
 }
 
 @media(min-width:544px){
-  .phone-brand br {
+  .phone-brand br,
+  .facebook-phone {
     display: none;
   }
   .btn-div {
@@ -1511,8 +1511,9 @@ nav.navbar,
 
 @media(max-width:992px){
     #header-title,
-    #header-in {
-        display: none;
+    #header-in,
+    .twitter-pc {
+      display: none;
     }
 
     #top #top-in #top-menu {
@@ -1524,8 +1525,13 @@ nav.navbar,
     }
     
     #breadcrumbs {
-    	display: none;
+      display: none;
     }
+  
+  
+   .twitter-phone {
+  	  display: block;
+   }
 }
 
 @media(max-width:544px){
@@ -1544,10 +1550,6 @@ nav.navbar,
   .facebook-phone {
   	display: block;
   	text-align: center;
-  }
-  
-  .twitter-pc {
-  	display: none;
   }
   
   .twitter-phone {
