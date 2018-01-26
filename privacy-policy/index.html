@@ -11,7 +11,10 @@
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta name="GENERATOR" content="JustSystems Homepage Builder Version 16.0.10.0 for Windows" />
 <!--[if IE]><meta http-equiv="imagetoolbar" content="no" /><![endif]-->
-
+<!--① ↓Bootstrapとfont-awesomeの追加 -->
+<link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css" >
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+<!--① ↑Bootstrapとfont-awesomeの追加 -->
 <link rel="stylesheet" href="../css/common.css" type="text/css" media="all" />
 <link rel="stylesheet" href="../css/layout.css" type="text/css" media="all" />
 <link rel="stylesheet" href="../css/design.css" type="text/css" media="all" />
@@ -37,337 +40,330 @@
 <div id="container">
 
 
-    <!--▼ヘッダー-->
-    <div id="header">
-        <div id="header-in">
+<!--▼ヘッダー-->
+<div id="header">
+    <div id="header-in">
 
-            <div id="header-title">
-                <p class="header-logo"><a href="./">理学療法士・作業療法士 <br />
-                    国家試験対策 WEBで合格！</a></p>
-                <h1>理学療法士　国家試験・作業療法士　国家試験のWEB演習問題サイト。毎日の積み重ねで目指せ合格！</h1>
-            </div>
+        <div id="header-title">
+            <p class="header-logo"><a href="./">理学療法士・作業療法士 <br />
+                国家試験対策 WEBで合格！</a></p>
+            <h1>理学療法士　国家試験・作業療法士　国家試験のWEB演習問題サイト。毎日の積み重ねで目指せ合格！</h1>
+        </div><!--//#header-title-->
 
-            <div id="header-text">
+        <div id="header-text">
 
-            </div>
+        </div><!--/#header-text-->
 
-        </div>
-    </div>
-    <!--▲ヘッダー-->
+    </div><!--/#header-in-->
+</div><!--/#header-->
+<!--▲ヘッダー-->
 
 
 
-<!--▼グローバルナビ-->
-<div id="global-nav">
-<dl id="global-nav-in">
-<dt class="btn-gnav">メニュー</dt>
-<dd class="menu-wrap">
+<!--↓⑦新しいグローバルナビを追加-->
+      <div id="global-nav">
+        <nav class="navbar navbar-expand-lg ">
+<!--                                                                        ↓⑭<br/>を追加-->
+          <a class="navbar-brand phone-brand" href="../">理学療法士・作業療法士 <br/> 国家試験対策　WEBで合格！</a>
+<!--                                                                        ↑⑭<br/>を追加-->
 
-<ul id="menu">
-		<li class="first"><a href="../">ホーム</a></li>
-		<li><a href="../item/">PT/OT共通問題</a></li>
-		<li><a href="../customer/">PT専門問題</a></li>
-		<li><a href="../about/">おすすめ参考書</a></li>
-		<li><a href="../news/">メルマガ登録</a></li>
-		<li><a href="../link/">リンク集</a></li>
-</ul>
-
-</dd>
-</dl>
-</div>
-<!--▲グローバルナビ-->
+            <div class="btn-div">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+              </button>
+            </div><!--.btn-div--->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul id="menu" class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="../">ホーム <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="../item/">PT/OT共通問題 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="../customer/">PT専門問題 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="../about/">おすすめ参考書 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="../news/">メルマガ登録 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="../link/">リンク集 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active phone-nav">
+                  <a href="../sitemap/">サイトマップ</a>
+                </li>
+                <li class="nav-item active phone-nav">
+                  <a href="../privacy-policy/">個人情報保護方針</a>
+                </li>
+              </ul>
+            </div><!--/.collapse navbar-collapse #navbarNav-->
+        </nav>
+      </div><!--/#global-nav-->
+<!--↑⑦新しいグローバルナビを追加-->
+<!--▲ヘッダー-->
 
 
 <!--main-->
 <div id="main">
 <!--main-in-->
-<div id="main-in">
-
-
-<!--▼パン屑ナビ-->
-<div id="breadcrumbs">
-<ol>
-<li class="first" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-	<a href="../" itemprop="url"><span itemprop="title">理学療法士・作業療法士 国家試験対策 WEBで合格！</span> TOP</a>
-</li>
-<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-	<span itemprop="title">個人情報保護方針</span>
-</li>
-</ol>
-</div>
-<!--▲パン屑ナビ-->
-
-
-<!--▽メイン＆サブ-->
-<div id="main-and-sub">
-
-<!--▽メインコンテンツ-->
-<div class="tile_storage">
-<div class="srorage_inner"></div><!-- /.srorage_inner -->
-<div id="main-contents">
-
-<!--conts-->
-<h2>個人情報保護方針</h2>
-<div class="contents">
-<p>当サイトは、お客様のプライバシーに係わる個人情報を保護することに細心の注意を払い取り組みます。</p>
-<p>当サイトにおいて、サイト利用様ご自身の判断により個人情報をご提供いただく場合がございますが、その情報は必要最小限の情報とし、その他の情報のご提供につきましてはサイト利用様の判断を尊重いたします。</p>
-<p class="link-next"><a href="http://www.caa.go.jp/seikatsu/kojin/houritsu/index.html" target="_blank">「個人情報保護法令」に関するページ（消費者庁）</a></p>
-</div>
-<!--/conts-->
-
-
-<!--conts-->
-<h3>個人情報の取得に関して</h3>
-<div class="contents">
-<p>当サイトでは、サイト利用様に当サイトをご利用いただくにあたり、必要最小限の個人情報をいただく場合がございます。</p>
-</div>
-<!--/conts-->
-
-
-<!--conts-->
-<h4>利用目的に関して</h4>
-<div class="contents">
-<p>サイト利用様からご提供いただいた個人情報は、サイト利用様がご利用になるサービス及び、弊社業務の範囲内に限り使用させていただきます。<br />
-また、各お申し込みの際に、別途利用目的が明示されている場合は、そちらの目的に従い利用させていただきます。</p>
-</div>
-<!--/conts-->
-
-
-<!--conts-->
-<h4>管理・保護体制に関して</h4>
-<div class="contents">
-<p>当サイトは、サイト利用様からご提供いただいた個人情報を適切な方法で管理し、お客様の個人情報の紛失や漏洩などが起きぬよう、合理的な措置を講じます。</p>
-</div>
-<!--/conts-->
-
-
-<!--conts-->
-<h4>提供・提示に関して</h4>
-<div class="contents">
-<p>当サイトが、ホームページ上でお客様よりご提供いただいた個人情報は、法令の定める場合などを除き、ご本人様の事前の了解なく第三者に提供・提示されることはありません。</p>
-</div>
-<!--/conts-->
-
-
-<!--conts-->
-<h4>お客様ご本人様からの開示等の請求手続きに関して</h4>
-<div class="contents">
-<p>当サイトがご本人の個人情報について照会や訂正を求められる場合は、確認を取らせていただいた上で適切に対処させていただきます。</p>
-</div>
-<!--/conts-->
-
-
-<!--conts-->
-<h4>個人情報の取り扱いに関する相談窓口</h4>
-<div class="contents">
-<p>お客様の個人情報の取り扱いに関するお問い合わせは、<a href="../link/">リンクページ</a>にある問い合わせフォームからお願いいたします。</p>
-</div>
-<!--/conts-->
-
-
-<!--conts-->
-<h4>サイト利用様の同意について</h4>
-<div class="contents">
-<p>当サイトは、お客様が当サイトを利用されるにあたり、当サイトの個人情報の取り扱いに対する考えに同意を得ておられるものと考えます。<br />
-            また、当サイトのご利用は、サイト利用様の責任において行われるものとします。<br />
-今後、ここに記載された内容が予告なく改訂される可能性がありますのでご了承下さい。</p>
-</div>
-<!--/conts-->
-
-
-
-</div>
-</div><!-- /.tile_storage -->
-<!--△メインコンテンツ-->
-
-
-<!--▽サブコンテンツ-->
-<dl id="sub-contents" class="sub-column">
-<dt class="sub-contents-btn">サブコンテンツ</dt>
-<dd id="sub-contents-in">
-
-
-
-
-
-</dd>
-</dl>
-<!--△サブコンテンツ-->
-
-
-</div>
-<!--△メイン＆サブ-->
-
-
-<!--▼サイドバー-->
-    <div class="tile_storage">
-      <dl id="sidebar" class="sub-column">
-<dt class="sidebar-btn">サイドバー</dt>
-        <dd id="sidebar-in">
-
-<div class="contents">
-<h3>プロフィール</h3>
-<p class="profile-img"><img src="../images/prof.jpg" width="162" height="162" alt="プロフィール画像" /></p>
-<div class="profile-txt">
-<p>理学療法士の管理人です。皆様の合格に役立つサイトを目指します！</p>
-</div>
-</div>
-
-
-
-
-
-<!--メニュー-->
-<div class="contents">
-<h3>問題一覧</h3>
-<ul class="side-menu">
-
-	<li><a href="/item/item01/">解剖学</a></li>
-	<li><a href="/item/item02/">生理学</a></li>
-	<li><a href="/item/item03/">運動学</a></li>
-	<li><a href="/item/item04/">病理学</a></li>
-	<li><a href="/item/item05/">内科学</a></li>
-	<li><a href="/item/item06/">神経内科学</a></li>
-	<li><a href="/item/item07/">整形外科学</a></li>
-	<li><a href="/item/item08/">人間発達学</a></li>
-	<li><a href="/item/item09/">リハ概論・リハ医学</a></li>
-	<li><a href="/item/item10/">精神医学</a></li>
-	<li><a href="/item/item11/">心理学</a></li>
-	<li><a href="/item/item12/">理学療法評価学</a></li>
-	<li><a href="/item/item13/">臨床運動学</a></li>
-	<li><a href="/item/item14/">ADL</a></li>
-	<li><a href="/item/item15/">義肢装具学</a></li>
-	<li><a href="/item/item16/">物理療法学</a></li>
-	<li><a href="/item/item17/">法律・その他</a></li>
-	<li><a href="/item/item18/">整形外科疾患</a></li>
-	<li><a href="/item/item19/">脊髄損傷</a></li>
-	<li><a href="/item/item20/">脳血管障害</a></li>
-	<li><a href="/item/item21/">神経筋疾患</a></li>
-	<li><a href="/item/item22/">内科系疾患</a></li>
-	<li><a href="/item/item23/">小児疾患</a></li>
-	<li><a href="/item/item24/">運動療法総論</a></li>
-	<li><a href="/item/item25/">第48回国試</a></li>
-	<li><a href="/item/item26/">第49回国試</a></li>
-	<li><a href="/item/item27/">第50回国試</a></li>
-            <li><a href="../about/">おすすめ参考書</a></li>
-            <li><a href="../news/">メルマガ登録</a></li>
-<li class="end"><a href="../link/">リンク集</a></li>
-          </ul>
-        </div>
-<!--/メニュー-->
-
-
-
-<!--conts-->
-<div class="contents">
-<h3>twitter</h3>
-<!-- start TweetsWind code -->
-<iframe     scrolling="no" frameborder="0" id="twitterWindIframe"     style="width:234px;height:480px; border:none;"     src="http://www.tweetswind.com/show?option=%7B%22isOnlyMe%22%3A%20%22true%22%2C%20%22twitterwind_frame_width%22%3A%20%22234%22%2C%20%22twitterwind_frame_height%22%3A%20%22480%22%2C%20%22twitterwind_frame_border%22%3A%20%22none%22%2C%20%22twitterwind_frame_border_color%22%3A%20%22C0DEED%22%2C%20%22twitterwind_base_font_size%22%3A%20%2212%22%2C%20%22twitterwind_logoimage%22%3A%20%22blueonwhite%22%2C%20%22twitterwind_username%22%3A%20%22on%22%2C%20%22twitterwind_username_bgcolor%22%3A%20%22FFFFFF%22%2C%20%22twitterwind_username_color%22%3A%20%22333333%22%2C%20%22twitterwind_username_follow%22%3A%20%22on%22%2C%20%22twitterwind_max_length%22%3A%20%2239%22%2C%20%22twitterwind_logo_bgcolor%22%3A%20%22FFFFFF%22%2C%20%22twitterwind_twit%22%3A%20%22on%22%2C%20%22twitterwind_twit_scroll_color%22%3A%20%22C0DEED%22%2C%20%22twitterwind_twit_scroll_bg_color%22%3A%20%22FFFFFF%22%2C%20%22twitterwind_twit_bgcolor%22%3A%20%22FFFFFF%22%2C%20%22twitterwind_twit_color%22%3A%20%22333333%22%2C%20%22twitterwind_twit_link_color%22%3A%20%220084B4%22%2C%20%22twitterwind_opacity%22%3A%20%22off%22%2C%20%22twitterwind_follower%22%3A%20%22none%22%2C%20%22twitterwind_follower_bgcolor%22%3A%20%22FFFFFF%22%2C%20%22usn%22%3A%20%22102674%22%7D"     > </iframe>
-<!--利用規約に従ってページ内に必ずリンクを表示してください-->
-<div style="font-size:12px; text-align:right; width:234px"><a target="_blank" href="http://www.tweetswind.com">TweetsWind</a></div> 
-<!-- end TweetsWind code -->
-
-</div>
-<!--/conts--><!--▲サイドバー--></dd>
-      </dl>
-    </div><!-- /.tile_storage -->
-    </div>
-<!--/main-in-->
-
-</div>
-<!--/main-->
+	<div id="main-in">
+		<div class="container">
+	<!--▼パン屑ナビ-->
+	<div id="breadcrumbs">
+	<ol>
+	<li class="first" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+		<a href="../" itemprop="url"><span itemprop="title">理学療法士・作業療法士 国家試験対策 WEBで合格！</span> TOP</a>
+	</li>
+	<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+		<span itemprop="title">個人情報保護方針</span>
+	</li>
+	</ol>
+	</div><!--/#breadcrumbs-->
+	<!--▲パン屑ナビ-->
+		<div class="row">
+			<div class="col-md-8">
+	
+	
+	<!--▽メイン＆サブ-->
+	
+	<!--▽メインコンテンツ-->
+	<div class="tile_storage">
+	  <div class="srorage_inner"></div>
+	<div id="main-contents">
+	
+	<!--conts-->
+	<h2>個人情報保護方針</h2>
+	<div class="contents">
+	<p>当サイトは、お客様のプライバシーに係わる個人情報を保護することに細心の注意を払い取り組みます。</p>
+	<p>当サイトにおいて、サイト利用様ご自身の判断により個人情報をご提供いただく場合がございますが、その情報は必要最小限の情報とし、その他の情報のご提供につきましてはサイト利用様の判断を尊重いたします。</p>
+	<p class="link-next"><a href="http://www.caa.go.jp/seikatsu/kojin/houritsu/index.html" target="_blank">「個人情報保護法令」に関するページ（消費者庁）</a></p>
+	</div>
+	<!--/conts-->
+	
+	
+	<!--conts-->
+	<h3>個人情報の取得に関して</h3>
+	<div class="contents">
+	<p>当サイトでは、サイト利用様に当サイトをご利用いただくにあたり、必要最小限の個人情報をいただく場合がございます。</p>
+	</div>
+	<!--/conts-->
+	
+	
+	<!--conts-->
+	<h4>利用目的に関して</h4>
+	<div class="contents">
+	<p>サイト利用様からご提供いただいた個人情報は、サイト利用様がご利用になるサービス及び、弊社業務の範囲内に限り使用させていただきます。<br />
+	また、各お申し込みの際に、別途利用目的が明示されている場合は、そちらの目的に従い利用させていただきます。</p>
+	</div>
+	<!--/conts-->
+	
+	
+	<!--conts-->
+	<h4>管理・保護体制に関して</h4>
+	<div class="contents">
+	<p>当サイトは、サイト利用様からご提供いただいた個人情報を適切な方法で管理し、お客様の個人情報の紛失や漏洩などが起きぬよう、合理的な措置を講じます。</p>
+	</div>
+	<!--/conts-->
+	
+	
+	<!--conts-->
+	<h4>提供・提示に関して</h4>
+	<div class="contents">
+	<p>当サイトが、ホームページ上でお客様よりご提供いただいた個人情報は、法令の定める場合などを除き、ご本人様の事前の了解なく第三者に提供・提示されることはありません。</p>
+	</div>
+	<!--/conts-->
+	
+	
+	<!--conts-->
+	<h4>お客様ご本人様からの開示等の請求手続きに関して</h4>
+	<div class="contents">
+	<p>当サイトがご本人の個人情報について照会や訂正を求められる場合は、確認を取らせていただいた上で適切に対処させていただきます。</p>
+	</div>
+	<!--/conts-->
+	
+	
+	<!--conts-->
+	<h4>個人情報の取り扱いに関する相談窓口</h4>
+	<div class="contents">
+	<p>お客様の個人情報の取り扱いに関するお問い合わせは、<a href="../link/">リンクページ</a>にある問い合わせフォームからお願いいたします。</p>
+	</div>
+	<!--/conts-->
+	
+	
+	<!--conts-->
+	<h4>サイト利用様の同意について</h4>
+	<div class="contents">
+	<p>当サイトは、お客様が当サイトを利用されるにあたり、当サイトの個人情報の取り扱いに対する考えに同意を得ておられるものと考えます。<br />
+	            また、当サイトのご利用は、サイト利用様の責任において行われるものとします。<br />
+	今後、ここに記載された内容が予告なく改訂される可能性がありますのでご了承下さい。</p>
+	</div>
+	<!--/conts-->
+	
+	
+	
+	</div><!--/#main-contents-->
+	</div><!-- /.tile_storage -->
+	</div><!--/.col-md-8-->
+	<!--△メイン＆サブ-->
+	
+	
+	<!--▼サイドバー-->
+	<div class="col-md-4">
+	    <div class="tile_storage">
+	      <dl id="sidebar" class="sub-column">
+	        <dd id="sidebar-in">
+	
+			<div class="contents">
+            <h3>プロフィール</h3>
+            <p class="profile-img"><img src="../images/prof.jpg" width="162" height="162" alt="プロフィール画像" /></p>
+            <div class="profile-txt">
+            <p>理学療法士の管理人です。皆様の合格に役立つサイトを目指します！</p>
+            </div><!--/.profile-img-->
+            </div><!--/.comtents-->
+	
+			<!--conts-->
+			<div class="content">
+			<h3>twitter</h3>
+			<!-- start TweetsWind code -->
+			<iframe     scrolling="no" frameborder="0" id="twitterWindIframe"     style="width:350px;height:400px; border:none;"     src="http://www.tweetswind.com/show?option=%7B%22isOnlyMe%22%3A%20%22true%22%2C%20%22twitterwind_frame_width%22%3A%20%22234%22%2C%20%22twitterwind_frame_height%22%3A%20%22480%22%2C%20%22twitterwind_frame_border%22%3A%20%22none%22%2C%20%22twitterwind_frame_border_color%22%3A%20%22C0DEED%22%2C%20%22twitterwind_base_font_size%22%3A%20%2212%22%2C%20%22twitterwind_logoimage%22%3A%20%22blueonwhite%22%2C%20%22twitterwind_username%22%3A%20%22on%22%2C%20%22twitterwind_username_bgcolor%22%3A%20%22FFFFFF%22%2C%20%22twitterwind_username_color%22%3A%20%22333333%22%2C%20%22twitterwind_username_follow%22%3A%20%22on%22%2C%20%22twitterwind_max_length%22%3A%20%2239%22%2C%20%22twitterwind_logo_bgcolor%22%3A%20%22FFFFFF%22%2C%20%22twitterwind_twit%22%3A%20%22on%22%2C%20%22twitterwind_twit_scroll_color%22%3A%20%22C0DEED%22%2C%20%22twitterwind_twit_scroll_bg_color%22%3A%20%22FFFFFF%22%2C%20%22twitterwind_twit_bgcolor%22%3A%20%22FFFFFF%22%2C%20%22twitterwind_twit_color%22%3A%20%22333333%22%2C%20%22twitterwind_twit_link_color%22%3A%20%220084B4%22%2C%20%22twitterwind_opacity%22%3A%20%22off%22%2C%20%22twitterwind_follower%22%3A%20%22none%22%2C%20%22twitterwind_follower_bgcolor%22%3A%20%22FFFFFF%22%2C%20%22usn%22%3A%20%22102674%22%7D"     > </iframe>
+			<!--利用規約に従ってページ内に必ずリンクを表示してください-->
+			<div style="font-size:12px; text-align:right; width:234px"><a target="_blank" href="http://www.tweetswind.com">TweetsWind</a></div>
+			</div><!--/.content-->
+			<!-- end TweetsWind code -->
+			
+			<!--③ここをコピペして、sidebar内へ-->
+			<div class="content">
+			  <div class="area01">
+			    <h3>facebookでも問題配信中</h3>
+			    <div class="access">
+			      <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fptotkokushi&amp;width=350&amp;height=427&amp;colorscheme=dark&amp;show_faces=false&amp;header=true&amp;stream=true&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:340px; height:427px;" allowtransparency="true"></iframe>
+			    </div>
+			  </div>
+			</div>
+			<!--③ここをコピペして、sidebar内へ-->
+			<!--/conts--><!--▲サイドバー--></dd>
+			      </dl>
+			    </div><!-- /.tile_storage -->
+			    </div><!-- col-md-4 -->
+			<!-- ↓⑨サイドバーも囲うようにcontainerとrowの</div>を追加 -->
+			    </div><!-- row -->
+			    </div><!-- container -->
+			</div><!--/main-in-->
+</div><!--/#main-->
 
 
 <!--▼フッター-->
 
+<!--↓⑤新しいフッターを追加-->
+<!--フッターメニュー-->
 <div id="footer">
 <div id="footer-in">
-
-
-<!--アドレスエリア-->
-<div class="area01">
-<h3>facebookでも問題配信中</h3>
-<div class="access">
-<iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fptotkokushi&amp;width=350&amp;height=427&amp;colorscheme=dark&amp;show_faces=false&amp;header=true&amp;stream=true&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:350px; height:427px;" allowtransparency="true"></iframe>
-</div>
-</div>
-<!--/アドレスエリア-->
-
-
-<!--フッターメニュー-->
-<div class="area02">
-<h3>メニュー</h3>
-<div class="footer-menu">
-
-<ul>
-<li><a href="../">ホーム</a></li>
-
-	<li><a href="/item/item01/">解剖学</a></li>
-	<li><a href="/item/item02/">生理学</a></li>
-	<li><a href="/item/item03/">運動学</a></li>
-	<li><a href="/item/item04/">病理学</a></li>
-	<li><a href="/item/item05/">内科学</a></li>
-	<li><a href="/item/item06/">神経内科学</a></li>
-	<li><a href="/item/item07/">整形外科学</a></li>
-	<li><a href="/item/item08/">人間発達学</a></li>
-	<li><a href="/item/item09/">リハ概論・リハ医学</a></li>
-	<li><a href="/item/item10/">精神医学</a></li>
-	<li><a href="/item/item11/">心理学</a></li>
-</ul>
-          <ul>
-	<li><a href="/item/item12/">理学療法評価学</a></li>
-	<li><a href="/item/item13/">臨床運動学</a></li>
-	<li><a href="/item/item14/">ADL</a></li>
-	<li><a href="/item/item15/">義肢装具学</a></li>
-	<li><a href="/item/item16/">物理療法学</a></li>
-	<li><a href="/item/item17/">法律・その他</a></li>
-	<li><a href="/item/item18/">整形外科疾患</a></li>
-	<li><a href="/item/item19/">脊髄損傷</a></li>
-	<li><a href="/item/item20/">脳血管障害</a></li>
-	<li><a href="/item/item21/">神経筋疾患</a></li>
-	<li><a href="/item/item22/">内科系疾患</a></li>
-	<li class="end"><a href="/item/item23/">小児疾患</a></li>
-</ul>
-          <ul>
-            <li><a href="../about/">おすすめ参考書</a></li>
-            <li><a href="../news/">メルマガ登録</a></li>
-            <li><a href="../link/">リンク集</a></li>
-          </ul>
-        </div>
-</div>
-<!--/フッターメニュー-->
-
-
+<div class="container">
+<div class="row">
+  <div class="col-6 col-sm-6 col-md-3">
+    <a href="../">
+      <div class="footer-box">
+        ホーム
+      </div>
+    </a>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3">
+    <a href="../about/">
+      <div class="footer-box">
+        おすすめ参考書
+      </div>
+    </a>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3">
+    <a href="../news/">
+      <div class="footer-box">
+        メルマガ登録
+      </div>
+    </a>
+  </div>
+  <div class="col-6 col-sm-6 col-md-3">
+    <a href="../news/">
+      <div class="footer-box">
+      リンク集
+      </div>
+    </a>
+  </div>
 </div>
 
-
-
-</div>
+<div class="row">
+  <div class="col-md-12">
+    <nav class="navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <p class="footer-btn-title">問題を選ぶ</p>
+      </button>
+    </nav>
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-4">
+          <div class="footer-menu">
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-6">
+                <ul>
+                   <li><a href="/item/item01/">解剖学</a></li>
+                   <li><a href="/item/item02/">生理学</a></li>
+                   <li><a href="/item/item03/">運動学</a></li>
+                   <li><a href="/item/item04/">病理学</a></li>
+                   <li><a href="/item/item05/">内科学</a></li>
+                   <li><a href="/item/item06/">神経内科学</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6">
+                <ul>
+                   <li><a href="/item/item07/">整形外科学</a></li>
+                   <li><a href="/item/item08/">人間発達学</a></li>
+                   <li><a href="/item/item09/">リハ概論・リハ医学</a></li>
+                   <li><a href="/item/item10/">精神医学</a></li>
+                   <li><a href="/item/item11/">心理学</a></li>
+                   <li><a href="/item/item12/">理学療法評価学</a></li>
+               </ul>
+             </div>
+             <div class="col-md-3 col-sm-6 col-6">
+              <ul>
+                 <li><a href="/item/item13/">臨床運動学</a></li>
+                 <li><a href="/item/item14/">ADL</a></li>
+                 <li><a href="/item/item15/">義肢装具学</a></li>
+                 <li><a href="/item/item16/">物理療法学</a></li>
+                 <li><a href="/item/item17/">法律・その他</a></li>
+                 <li><a href="/item/item18/">整形外科疾患</a></li>
+               </ul>
+             </div>
+             <div class="col-md-3 col-sm-6 col-6">
+               <ul>
+                 <li><a href="/item/item19/">脊髄損傷</a></li>
+                 <li><a href="/item/item20/">脳血管障害</a></li>
+                 <li><a href="/item/item21/">神経筋疾患</a></li>
+                 <li><a href="/item/item22/">内科系疾患</a></li>
+                 <li class="end"><a href="/item/item23/">小児疾患</a></li>
+               </ul>
+             </div><!--/.col-md-3 col-sm-6 col-6-->
+            </div><!--/.row-->
+          </div><!--/.footer-menu-->
+        </div><!--/.p-4-->
+      </div><!--/.collapse /#navbarToggleExternalContent-->
+    </div><!--/.pos-f-t-->
+  </div><!--/.col-md-12-->
+</div><!--/.row-->
+</div><!--/.container-->
+</div><!--/#footer-in-->
+</div><!--/#footer-->
 <!--▲フッター-->
-
-<!--▼トップメニュー-->
-<div id="top">
-<div id="top-in">
-
-<ul id="top-menu">
-<li><a href="../sitemap/">サイトマップ</a></li>
-<li><a href="../privacy-policy/">個人情報保護方針</a></li>
-</ul>
-
-</div>
-</div>
-<!--▲トップメニュー-->
 
 
 <!--コピーライト-->
 <div class="copyright">
-<p><small>Copyright (C) 2014 理学療法士・作業療法士 国家試験対策 WEBで合格！<span>All Rights Reserved.</span></small></p>
-</div>
+<p><small>Copyright (C) 2014 理学療法士・作業療法士 国家試験対策 WEBで合格！ <span>All Rights Reserved.</span></small></p>
+</div><!--/.copyright-->
 <!--/コピーライト-->
 
-
-
-</div>
+</div><!--/#container-->
 <!--▼ページの先頭へ戻る-->
 <p class="page-top"><a href="#container">このページの先頭へ</a></p>
 <!--▲ページの先頭へ戻る-->
@@ -398,5 +394,23 @@
 //]]>
 </script>
 <!-- /NINJA ANALYZE -->
+ <!-- Optional JavaScript -->
+   <!--② Bootstrapを使うためのscript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="../css/bootstrap/js/bootstrap.min.js"></script>
+   <!--② Bootstrapを使うためのscript -->
+  <div id="fb-root"></div>
+  <!--↓②facebook用script-->
+  <script>
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.11&appId=313237155782985&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <!--↑②facebook用script-->
 </body>
 </html>
