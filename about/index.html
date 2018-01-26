@@ -406,5 +406,16 @@ if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_6ebdb9066b3f6145232e00242376e7d9)=='u
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="../css/bootstrap/js/bootstrap.min.js"></script>
    <!--② Bootstrapを使うためのscript -->
+  <!--↓②facebook用script-->
+  <script>
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.11&appId=313237155782985&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <!--↑②facebook用script-->
 </body>
 </html>
