@@ -380,7 +380,7 @@ margin: auto;
 }
 
 #main-contents h4 a:link,
-#main-contents h4 a:visited{ color: #333; }
+#main-contents h4 a:visited{ color: #333; display: block; }
 
 #main-contents h4 a:hover,
 #main-contents h4 a:active{ color: #f60; }
