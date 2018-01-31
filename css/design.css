@@ -418,7 +418,9 @@ margin: auto;
 /*●段落タグ*/
 #main-contents p{ margin-bottom: 1.5em; }
 #main-contents .link-naver{
-    margin:0.3em 0 1.4em 21em;
+	text-align: left;
+	padding-left: 10px;
+    margin:5px 0px 15px;
 }
 #main-contents .study-series{
     display: inline-block;
@@ -1533,6 +1535,10 @@ nav.navbar,
     .twitter-pc {
       display: none;
     }
+    
+    #container {
+    	padding-top: 0px;
+    }
 
     #top #top-in #top-menu {
       display: block;
@@ -1549,6 +1555,10 @@ nav.navbar,
   
    .twitter-phone {
   	  display: block;
+   }
+   img {
+   	width: 100%;
+   	height: auto;
    }
 }
 
@@ -1573,5 +1583,13 @@ nav.navbar,
   
   .twitter-phone {
 	display: block;
+  }
+  
+  #main-image .catch-copy {
+  	position: absolute;
+    top: 1.5em;
+    left: 1em;
+    color: #fff;
+    font-size: 15px;
   }
 }
