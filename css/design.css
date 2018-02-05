@@ -320,6 +320,14 @@ margin: auto;
     color: inherit;
 }
 
+/*H1タグ*/
+#main-contents h1{
+	text-align: center;
+	font-size: 1.9em;
+	font-weight: bold;
+	margin: 10px 0px;
+}
+
 
 /*●H2タグ*/
 #main-contents h2{
@@ -1520,6 +1528,7 @@ nav.navbar,
 
 @media(min-width:544px){
   .phone-brand br,
+  .title-br br,
   .facebook-phone {
     display: none;
   }
