@@ -1529,7 +1529,8 @@ nav.navbar,
 @media(min-width:544px){
   .phone-brand br,
   .title-br br,
-  .facebook-phone {
+  .facebook-phone,
+  .facebook-iphonese {
     display: none;
   }
   .btn-div {
@@ -1602,3 +1603,13 @@ nav.navbar,
     font-size: 15px;
   }
 }
+
+@media(max-width:330px){
+	.facebook-phone {
+		display: none;
+	}
+	.facebook-iphonese {
+		display: block;
+	}	
+}
+

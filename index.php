@@ -131,33 +131,19 @@
                             <div class="tile_storage">
                             
 
-                            <ul class="sb m50-b">
-                                <li class="sb-tweet"></li>
-                                <li class="sb-hatebu"></li>
-                                <li class="sb-gplus"></li>
-                                <li class="sb-fb-like"></li>
-                            </ul>
+                            <!--<ul class="sb m50-b">-->
+                            <!--    <li class="sb-tweet"></li>-->
+                            <!--    <li class="sb-hatebu"></li>-->
+                            <!--    <li class="sb-gplus"></li>-->
+                            <!--    <li class="sb-fb-like"></li>-->
+                            <!--</ul>-->
                             <!--/conts-->
 
 
 
 
 
-                            <div class="contents box-wrap">
-
-
-
-                            </div>
                             <!--/conts-->
-                            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                            <!-- 国試サイト336×280 -->
-                            <ins class="adsbygoogle"
-                                 style="display:inline-block;width:336px;height:280px;margin:0.5em 0;"
-                                 data-ad-client="ca-pub-9635019046613020"
-                                 data-ad-slot="8911946195"></ins>
-                            <script>
-                                (adsbygoogle = window.adsbygoogle || []).push({});
-                            </script>
 
                             <!--conts-->
                             <h2>在宅医療・在宅介護のメディアサイト CoMedi【コメディ】</h2>
@@ -187,8 +173,9 @@
                                 <li>国家試験を耳で聞いて学ぶ！</li>
                             </ul> <!--/conts-->
 
-
                             <!--conts-->
+                            <!--/conts-->
+
                             <!--conts-->
 
                             <!--/conts--><br />
@@ -285,6 +272,9 @@
                                     </div>
                                     <div class="facebook-phone">
                                       <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fptotkokushi%2F&tabs=timeline&width=320&height=380&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=313237155782985" width="320" height="380" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                                    </div>
+                                    <div class="facebook-iphonese">
+                                      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fptotkokushi%2F&tabs=timeline&width=270&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=313237155782985" width="270" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
                                     </div>
                                   </div>
                                 </div>
