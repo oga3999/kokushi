@@ -327,108 +327,104 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
 <!--/main-->
 
 
-<!--▼フッター-->
+<!--フッターメニュー-->
+<div id="footer">
+<div id="footer-in">
+<div class="container">
+<div class="row">
+  <div class="col-12 col-sm-12 col-md-4">
+    <a href="../../">
+      <div class="footer-box">
+        ホーム
+      </div>
+    </a>
+  </div>
+  <div class="col-6 col-sm-6 col-md-4">
+    <a href="../../about/">
+      <div class="footer-box">
+        おすすめ参考書
+      </div>
+    </a>
+  </div>
+  <div class="col-6 col-sm-6 col-md-4">
+    <a href="../../link/">
+      <div class="footer-box">
+      リンク集
+      </div>
+    </a>
+  </div>
+</div>
 
-<!--↓⑤新しいフッターを追加-->
-            <!--フッターメニュー-->
-            <div id="footer">
-            <div id="footer-in">
-            <div class="container">
+<div class="row">
+  <div class="col-md-12">
+    <nav class="navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <p class="footer-btn-title">問題を選ぶ</p>
+      </button>
+    </nav>
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-4">
+          <div class="footer-menu">
             <div class="row">
-              <div class="col-12 col-sm-12 col-md-4">
-                <a href="../">
-                  <div class="footer-box">
-                    ホーム
-                  </div>
-                </a>
+              <div class="col-md-3 col-sm-6 col-6">
+                <ul>
+                   <li><a href="../item01/">解剖学</a></li>
+                   <li><a href="../item02/">生理学</a></li>
+                   <li><a href="../item03/">運動学</a></li>
+                   <li><a href="../item04/">病理学</a></li>
+                   <li><a href="../item05/">内科学</a></li>
+                   <li><a href="../item06/">神経内科学</a></li>
+                </ul>
               </div>
-              <div class="col-6 col-sm-6 col-md-4">
-                <a href="../about/">
-                  <div class="footer-box">
-                    おすすめ参考書
-                  </div>
-                </a>
-              </div>
-              <div class="col-6 col-sm-6 col-md-4">
-                <a href="../news/">
-                  <div class="footer-box">
-                  リンク集
-                  </div>
-                </a>
-              </div>
-            </div>
+              <div class="col-md-3 col-sm-6 col-6">
+                <ul>
+                   <li><a href="../item07/">整形外科学</a></li>
+                   <li><a href="../item08/">人間発達学</a></li>
+                   <li><a href="../item09/">リハ概論・リハ医学</a></li>
+                   <li><a href="../item10/">精神医学</a></li>
+                   <li><a href="../item11/">心理学</a></li>
+                   <li><a href="../item12/">理学療法評価学</a></li>
+               </ul>
+             </div>
+             <div class="col-md-3 col-sm-6 col-6">
+              <ul>
+                 <li><a href="../item13/">臨床運動学</a></li>
+                 <li><a href="../item14/">ADL</a></li>
+                 <li><a href="../item15/">義肢装具学</a></li>
+                 <li><a href="../item16/">物理療法学</a></li>
+                 <li><a href="../item17/">法律・その他</a></li>
+                 <li><a href="../item18/">整形外科疾患</a></li>
+               </ul>
+             </div>
+             <div class="col-md-3 col-sm-6 col-6">
+               <ul>
+                 <li><a href="../item19/">脊髄損傷</a></li>
+                 <li><a href="../item20/">脳血管障害</a></li>
+                 <li><a href="../item21/">神経筋疾患</a></li>
+                 <li><a href="../item22/">内科系疾患</a></li>
+                 <li><a href="../item23/">小児疾患</a></li>
+                 <li><a href="../item24/">運動療法総論</a></li>
+                 <li class="end"><a href="/item/item25/">第48回国試問題</a></li>
+               </ul>
+             </div><!--/.col-md-3 col-sm-6 col-6-->
+            </div><!--/.row-->
+          </div><!--/.footer-menu-->
+        </div><!--/.p-4-->
+      </div><!--/.collapse /#navbarToggleExternalContent-->
+    </div><!--/.pos-f-t-->
+  </div><!--/.col-md-12-->
+</div><!--/.row-->
+</div><!--/.container-->
+</div><!--/#footer-in-->
+</div><!--/#footer-->
+<!--▲フッターメニュー-->
 
-            <div class="row">
-              <div class="col-md-12">
-                <nav class="navbar">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <p class="footer-btn-title">問題を選ぶ</p>
-                  </button>
-                </nav>
-                <div class="pos-f-t">
-                  <div class="collapse" id="navbarToggleExternalContent">
-                    <div class="p-4">
-                      <div class="footer-menu">
-                        <div class="row">
-                          <div class="col-md-3 col-sm-6 col-6">
-                            <ul>
-                               <li><a href="../item/item01/">解剖学</a></li>
-                               <li><a href="../item/item02/">生理学</a></li>
-                               <li><a href="../item/item03/">運動学</a></li>
-                               <li><a href="../item/item04/">病理学</a></li>
-                               <li><a href="../item/item05/">内科学</a></li>
-                               <li><a href="../item/item06/">神経内科学</a></li>
-                            </ul>
-                          </div>
-                          <div class="col-md-3 col-sm-6 col-6">
-                            <ul>
-                               <li><a href="../item/item07/">整形外科学</a></li>
-                               <li><a href="../item/item08/">人間発達学</a></li>
-                               <li><a href="../item/item09/">リハ概論・リハ医学</a></li>
-                               <li><a href="../item/item10/">精神医学</a></li>
-                               <li><a href="../item/item11/">心理学</a></li>
-                               <li><a href="../item/item12/">理学療法評価学</a></li>
-                           </ul>
-                         </div>
-                         <div class="col-md-3 col-sm-6 col-6">
-                          <ul>
-                             <li><a href="../item/item13/">臨床運動学</a></li>
-                             <li><a href="../item/item14/">ADL</a></li>
-                             <li><a href="../item/item15/">義肢装具学</a></li>
-                             <li><a href="../item/item16/">物理療法学</a></li>
-                             <li><a href="../item/item17/">法律・その他</a></li>
-                             <li><a href="../item/item18/">整形外科疾患</a></li>
-                           </ul>
-                         </div>
-                         <div class="col-md-3 col-sm-6 col-6">
-                           <ul>
-                             <li><a href="../item/item19/">脊髄損傷</a></li>
-                             <li><a href="../item/item20/">脳血管障害</a></li>
-                             <li><a href="../item/item21/">神経筋疾患</a></li>
-                             <li><a href="../item/item22/">内科系疾患</a></li>
-                             <li class="end"><a href="../item/item23/">小児疾患</a></li>
-                           </ul>
-                         </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            </div>
-            </div>
-            </div><!--/フッターメニュー-->
-<!--▲フッター-->
-
-<!--▼トップメニュー-->
-
-<!--▲トップメニュー-->
 
 
 <!--コピーライト-->
 <div class="copyright">
-<p><small>Copyright (C) 2014 あなたのお名前 <span>All Rights Reserved.</span></small></p>
+<p><small>Copyright (C) 2014 理学療法士・作業療法士 国家試験対策 WEBで合格！<span>All Rights Reserved.</span></small></p>
 </div>
 <!--/コピーライト--><!--▼ページの先頭へ戻る-->
 <p class="page-top"><a href="#container">このページの先頭へ</a></p>
