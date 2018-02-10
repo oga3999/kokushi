@@ -12,11 +12,10 @@
         <!--↓ogp設定-->
         <meta property="og:title" content="理学療法士国家試験・作業療法士　国家試験対策 WEBで合格！"/>
         <meta property="og:description" content="理学療法士　国家試験・作業療法士　国家試験のWEB演習問題サイトです。過去問を無料公開中！毎日の積み重ねで目指せ国試合格"/>
-        <meta property="og:image" content="http://kokushi-ptot.com/images/kokushi-img.jpg"/>
+        <meta property="og:image" content="http://kokushi-ptot.com/images/top-image.jpg"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:url" content="https://kokushi-ptot.com/" />
         <meta name="twitter:site" content="@rigakukokushi"/>
-        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:card" content="summarylargeimage"/>
         <meta property="fb:app_id" content="149150869134546" />
         <!--↑ogp設定-->
 
@@ -149,6 +148,37 @@
                             <!--    <li class="sb-fb-like"></li>-->
                             <!--</ul>-->
                             <!--/conts-->
+                            <h2>PT/OT共通問題</h2>
+                            <div class="row">
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item01/" role="button">解剖学</a>
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item02/" role="button">生理学</a>
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item03/" role="button">運動学</a>
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item04/" role="button">病理学</a>
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item05/" role="button">内科学</a>
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item06/" role="button">神経内科学</a>
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item07/" role="button">整形外科学</a>
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item08/" role="button">人間発達学</a>
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item09/" role="button">リハ概論・医学</a>
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item10/" role="button">精神医学</a>
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item11/" role="button">心理学</a>
+                            </div>
+                            <h2>PT専門問題</h2>
+                            <div class="row">
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item12/" role="button">理学療法評価学</a>
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item13/" role="button">臨床運動学</a>
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item14/" role="button">ADL</a>
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item15/" role="button">義肢装具学</a>
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item16/" role="button">物理療法学</a>
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item17/" role="button">法律・その他</a>
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item18/" role="button">整形外科疾患</a>
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item19/" role="button">脊髄損傷</a>
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item20/" role="button">脳血管障害</a>
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item21/" role="button">神経筋疾患</a>
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item22/" role="button">内科系疾患</a>
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item23/" role="button">小児疾患</a>
+                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="item/item24/" role="button">運動療法総論</a>
+                              <!---<a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="/item/item25/" role="button">第48回国試問題</a>--->
+                            </div>
 
 
 
