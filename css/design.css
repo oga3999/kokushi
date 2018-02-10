@@ -1491,6 +1491,18 @@ p.footer-btn-title {
 	margin: 5px;
 }
 
+/*トップページ問題リンクボタン*/
+.top-btn {
+    margin-bottom: 12px;
+    margin-left: 17px;
+}
+.top-btn a:link {
+    color: #28a745; 
+}
+.top-btn a:hover {
+    color: #ffffff; 
+}
+
 /*navを中央表示*/
 .navbar-nav {
   margin: 0 auto;
