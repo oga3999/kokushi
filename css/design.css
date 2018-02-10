@@ -1439,6 +1439,11 @@ dl.search-box,
 　template created by web-rider
 -------------------------------------------------------------*/
 
+h1.title-br {
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+}
 
 /* レスポンシブ化作業用CSS */
 div.pre {
@@ -1532,7 +1537,8 @@ nav.navbar,
 
 @media(min-width:544px){
   .phone-brand br,
-  .facebook-phone {
+  .facebook-phone,
+  .facebook-iphonese{
     display: none;
   }
   .btn-div {
@@ -1544,7 +1550,8 @@ nav.navbar,
 @media(max-width:992px){
     #header-title,
     #header-in,
-    .twitter-pc {
+    .twitter-pc,
+    .facebook-iphonese {
       display: none;
     }
     
@@ -1604,4 +1611,13 @@ nav.navbar,
     color: #fff;
     font-size: 15px;
   }
+}
+
+@media(max-width:330px){
+	.facebook-phone {
+		display: none;	
+	}
+	.facebook-iphonese {
+		display: block;
+	}
 }
