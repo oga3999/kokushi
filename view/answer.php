@@ -14,6 +14,16 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta name="GENERATOR" content="JustSystems Homepage Builder Version 16.0.10.0 for Windows" />
 <!--[if IE]><meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+<!--↓ogp設定-->
+<meta property="og:title" content="理学療法士国家試験・作業療法士　国家試験対策 WEBで合格！"/>
+<meta property="og:description" content="理学療法士　国家試験・作業療法士　国家試験のWEB演習問題サイトです。過去問を無料公開中！毎日の積み重ねで目指せ国試合格"/>
+<meta property="og:image" content="http://kokushi-ptot.com/images/kokushi-img.jpg"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://kokushi-ptot.com/" />
+<meta name="twitter:site" content="@rigakukokushi"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta property="fb:app_id" content="149150869134546" />
+<!--↑ogp設定-->
 
 
 <!--① ↓Bootstrapとfont-awesomeの追加 -->
@@ -184,6 +194,22 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
     </div>
 
 </div>
+<div class="content">
+<!--↓SNSボタンの設置-->
+              <div class="ninja_onebutton">
+                <script type="text/javascript">
+                //<![CDATA[
+                (function(d){
+                if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_e9f4a047c44ed743e6e13246a1f34d23)=='undefined'){
+                    document.write("<sc"+"ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/e9f4a047c44ed743e6e13246a1f34d23'><\/sc"+"ript>");
+                }else{
+                    window.NINJA_CO_JP_ONETAG_BUTTON_e9f4a047c44ed743e6e13246a1f34d23.ONETAGButton_Load();}
+                })(document);
+                //]]>
+                </script><span class="ninja_onebutton_hidden" style="display:none;"></span><span style="display:none;" class="ninja_onebutton_hidden"></span>
+              </div>
+</div>
+<!--↑SNSボタンの設置-->
 <br />
     <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
     <!-- 国試サイトリンクユニット -->

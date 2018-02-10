@@ -12,10 +12,11 @@
         <!--↓ogp設定-->
         <meta property="og:title" content="理学療法士国家試験・作業療法士　国家試験対策 WEBで合格！"/>
         <meta property="og:description" content="理学療法士　国家試験・作業療法士　国家試験のWEB演習問題サイトです。過去問を無料公開中！毎日の積み重ねで目指せ国試合格"/>
-        <meta property="og:image" content="http://kokushi-ptot.com/images/top-image.jpg"/>
+        <meta property="og:image" content="http://kokushi-ptot.com/images/kokushi-img.jpg"/>
         <meta property="og:type" content="website"/>
-        <meta name="twitter:site" content="@takukana8408"/>
-        <meta name="twitter:card" content="summarylargeimage"/>
+        <meta property="og:url" content="https://kokushi-ptot.com/" />
+        <meta name="twitter:site" content="@rigakukokushi"/>
+        <meta name="twitter:card" content="summary_large_image"/>
         <meta property="fb:app_id" content="149150869134546" />
         <!--↑ogp設定-->
 
