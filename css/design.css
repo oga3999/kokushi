@@ -1492,14 +1492,14 @@ p.footer-btn-title {
 }
 
 /*トップページ問題リンクボタン*/
+a.top-btn{
+	color: #28a745; 
+}
 .top-btn {
     margin-bottom: 12px;
     margin-left: 17px;
 }
-.top-btn a:link {
-    color: #28a745; 
-}
-.top-btn a:hover {
+a.top-btn:hover {
     color: #ffffff; 
 }
 
