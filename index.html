@@ -9,6 +9,16 @@
         <meta http-equiv="Content-Style-Type" content="text/css" />
         <meta http-equiv="Content-Script-Type" content="text/javascript" />
         <meta name="GENERATOR" content="JustSystems Homepage Builder Version 16.0.10.0 for Windows" />
+        <!--↓ogp設定-->
+        <meta property="og:title" content="理学療法士国家試験・作業療法士　国家試験対策 WEBで合格！"/>
+        <meta property="og:description" content="理学療法士　国家試験・作業療法士　国家試験のWEB演習問題サイトです。過去問を無料公開中！毎日の積み重ねで目指せ国試合格"/>
+        <meta property="og:image" content="http://kokushi-ptot.com/images/top-image.jpg"/>
+        <meta property="og:type" content="website"/>
+        <meta name="twitter:site" content="@takukana8408"/>
+        <meta name="twitter:card" content="summarylargeimage"/>
+        <meta property="fb:app_id" content="149150869134546" />
+        <!--↑ogp設定-->
+
         <!--[if IE]><meta http-equiv="imagetoolbar" content="no" /><![endif]-->
 
         <!--① ↓Bootstrapとfont-awesomeの追加 -->
