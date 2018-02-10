@@ -320,18 +320,10 @@ margin: auto;
     color: inherit;
 }
 
-/*H1タグ*/
-#main-contents h1{
-	text-align: center;
-	font-size: 1.9em;
-	font-weight: bold;
-	margin: 10px 0px;
-}
-
 
 /*●H2タグ*/
 #main-contents h2{
-    margin: 0.4em 0.4em 0;
+    margin: 0.4em 0 1.5em 0;
 	padding: 0.3em 0.5em;
 	border-left: 28px solid #40ad3b;
 	background: url(../images/common/bg-dot.png) #333;
@@ -1447,10 +1439,6 @@ dl.search-box,
 　template created by web-rider
 -------------------------------------------------------------*/
 
-.ninja_onebutton {
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
 
 /* レスポンシブ化作業用CSS */
 div.pre {
@@ -1532,9 +1520,7 @@ nav.navbar,
 
 @media(min-width:544px){
   .phone-brand br,
-  .title-br br,
-  .facebook-phone,
-  .facebook-iphonese {
+  .facebook-phone {
     display: none;
   }
   .btn-div {
@@ -1607,13 +1593,3 @@ nav.navbar,
     font-size: 15px;
   }
 }
-
-@media(max-width:330px){
-	.facebook-phone {
-		display: none;
-	}
-	.facebook-iphonese {
-		display: block;
-	}	
-}
-
