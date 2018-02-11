@@ -14,7 +14,10 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
         <meta http-equiv="Content-Script-Type" content="text/javascript" />
         <meta name="GENERATOR" content="JustSystems Homepage Builder Version 16.0.10.0 for Windows" />
         <!--[if IE]><meta http-equiv="imagetoolbar" content="no" /><![endif]-->
-
+        <!--① ↓Bootstrapとfont-awesomeの追加 -->
+        <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css" >
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+        <!--① ↑Bootstrapとfont-awesomeの追加 -->
         <link rel="stylesheet" href="../../css/common.css" type="text/css" media="all" />
         <link rel="stylesheet" href="../../css/layout.css" type="text/css" media="all" />
         <link rel="stylesheet" href="../../css/design.css" type="text/css" media="all" />
@@ -30,10 +33,6 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
         <script type="text/javascript" src="../../js/utility.js" charset="utf-8"></script>
 
         <link href="qm.css" rel="stylesheet" />
-        <!--① ↓Bootstrapとfont-awesomeの追加 -->
-        <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css" >
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
-        <!--① ↑Bootstrapとfont-awesomeの追加 -->
 
         <script src="jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="qmView.js" type="text/javascript" charset="utf-8"></script>
@@ -187,20 +186,18 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
                                 </div>
                             </form>
 
-                            <!--↓SNSボタンの設置-->
-                              <div class="ninja_onebutton">
+                            <div class="ninja_onebutton">
                                 <script type="text/javascript">
-                                //<![CDATA[
-                                (function(d){
-                                if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_e9f4a047c44ed743e6e13246a1f34d23)=='undefined'){
-                                    document.write("<sc"+"ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/e9f4a047c44ed743e6e13246a1f34d23'><\/sc"+"ript>");
-                                }else{
-                                    window.NINJA_CO_JP_ONETAG_BUTTON_e9f4a047c44ed743e6e13246a1f34d23.ONETAGButton_Load();}
-                                })(document);
-                                //]]>
+                                    //<![CDATA[
+                                    (function(d){
+                                        if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_6ebdb9066b3f6145232e00242376e7d9)=='undefined'){
+                                            document.write("<sc"+"ript type='text\/javascript' src='http:\/\/omt.shinobi.jp\/b\/6ebdb9066b3f6145232e00242376e7d9'><\/sc"+"ript>");
+                                        }else{
+                                            window.NINJA_CO_JP_ONETAG_BUTTON_6ebdb9066b3f6145232e00242376e7d9.ONETAGButton_Load();}
+                                    })(document);
+                                    //]]>
                                 </script><span class="ninja_onebutton_hidden" style="display:none;"></span><span style="display:none;" class="ninja_onebutton_hidden"></span>
-                              </div>
-                             <!--↑SNSボタンの設置-->
+                            </div>
 
 
                             <br />

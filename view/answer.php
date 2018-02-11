@@ -142,15 +142,15 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
         <div class="tile_storage">
 <!--▽メインコンテンツ-->
 <div id="main-contents">
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
     <!-- 国試サイト728×90 -->
-    <ins class="adsbygoogle"
+    <!-- <ins class="adsbygoogle"
          style="display:inline-block;width:728px;height:90px"
          data-ad-client="ca-pub-9635019046613020"
          data-ad-slot="4342145796"></ins>
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+    </script> -->
 
 
 <?php
@@ -191,6 +191,7 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
     <div class="qm-pagination">
         <div class="qm-page" ><a href="index.php<?php qmRetryPrm(); ?>"><div class="qm-page-retry" >再挑戦</div></a></div>
         <div class="qm-page" ><a href="/" ><div class="qm-page-home" >TOPへ</div></a></div>
+        <div class="clearfix"></div>
     </div>
 <h2>PT/OT共通問題</h2>
                             <div class="row">
@@ -227,17 +228,17 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
 <div class="content">
 <!--↓SNSボタンの設置-->
               <div class="ninja_onebutton">
-                <script type="text/javascript">
-                //<![CDATA[
-                (function(d){
-                if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_e9f4a047c44ed743e6e13246a1f34d23)=='undefined'){
-                    document.write("<sc"+"ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/e9f4a047c44ed743e6e13246a1f34d23'><\/sc"+"ript>");
-                }else{
-                    window.NINJA_CO_JP_ONETAG_BUTTON_e9f4a047c44ed743e6e13246a1f34d23.ONETAGButton_Load();}
-                })(document);
-                //]]>
-                </script><span class="ninja_onebutton_hidden" style="display:none;"></span><span style="display:none;" class="ninja_onebutton_hidden"></span>
-              </div>
+                                <script type="text/javascript">
+                                //<![CDATA[
+                                (function(d){
+                                if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_1baebd94db7f41d8c24f5ac5059a1e78)=='undefined'){
+                                    document.write("<sc"+"ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/1baebd94db7f41d8c24f5ac5059a1e78'><\/sc"+"ript>");
+                                }else{
+                                    window.NINJA_CO_JP_ONETAG_BUTTON_1baebd94db7f41d8c24f5ac5059a1e78.ONETAGButton_Load();}
+                                })(document);
+                                //]]>
+                                </script><span class="ninja_onebutton_hidden" style="display:none;"></span><span style="display:none;" class="ninja_onebutton_hidden"></span>
+            　</div>
 </div>
 <!--↑SNSボタンの設置-->
 <br />
