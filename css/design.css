@@ -323,7 +323,7 @@ margin: auto;
 
 /*●H2タグ*/
 #main-contents h2{
-    margin: 0.4em 0 1.5em 0;
+    margin: 0.4em 0 0.5em 0;
 	padding: 0.3em 0.5em;
 	border-left: 28px solid #40ad3b;
 	background: url(../images/common/bg-dot.png) #333;
@@ -350,11 +350,13 @@ margin: auto;
 }
 /*●H3タグ*/
 #main-contents h3{
-	margin: 0 0 1.5em;
+	margin: 0.5em 0;
 	padding: 0.8em;
 	border: 2px solid #414141;
 	font-size: 1.143em;
 	font-weight: bold;
+	width: 100%;
+	text-align: center;
 }
 
 #main-contents h3 a:link,
@@ -406,6 +408,9 @@ margin: auto;
 	padding: 0;
 	border: 0;
 	background: none;
+	display: block;
+	width: 100%;
+	text-align: center;
 }
 
 #main-contents h5 a:link,
@@ -1496,6 +1501,10 @@ p.footer-btn-title {
 	margin: 5px;
 }
 
+.book-box{
+	margin-bottom: 15px;
+}
+
 /*トップページ問題リンクボタン*/
 a.top-btn{
 	color: #2f2f2f; 
@@ -1575,7 +1584,7 @@ nav.navbar,
    .twitter-phone {
   	  display: block;
    }
-   img {
+   img.big-photo {
    	width: 100%;
    	height: auto;
    }
