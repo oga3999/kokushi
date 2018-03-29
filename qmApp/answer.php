@@ -61,11 +61,11 @@ require_once(dirname(__FILE__).'/view.php');
         <div class="qm-page" ><a href="/" ><div class="qm-page-home" >TOPへ</div></a></div>
     </div>
 
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <a href="../about/"><img src="../images/book-afi.png" alt="おすすめの本一覧"></a>
-        </div>
+<div class="row">
+    <div class="col-12 col-md-6">
+        <a href="../about/"><img style="width:100%;" src="../images/book-afi.png" alt="おすすめの本一覧"></a>
     </div>
+</div>
 
 </div>
 

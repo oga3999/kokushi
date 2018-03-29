@@ -193,6 +193,13 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
         <div class="qm-page" ><a href="/" ><div class="qm-page-home" >TOPへ</div></a></div>
         <div class="clearfix"></div>
     </div>
+    
+        <div class="row">
+    <div class="col-12 col-md-6">
+        <a href="../about/"><img style="width:100%;" src="../images/book-afi.png" alt="おすすめの本一覧"></a>
+    </div>
+</div>
+    
 <h2>PT/OT共通問題</h2>
                             <div class="row">
                               <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item01/" role="button">解剖学</a>
