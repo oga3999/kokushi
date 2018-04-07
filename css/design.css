@@ -376,13 +376,13 @@ margin: auto;
 #main-contents h4{
 	margin: 0 0 0.5em;
 	padding: 0.8em;
-	border: 1.5px solid #055690;
+	/*border: 1.5px solid #055690;*/
 	font-weight: bold;
 	font-size:18px;
 }
 
 #main-contents h4 a:link,
-#main-contents h4 a:visited{ color: #333; display: block; }
+#main-contents h4 a:visited{ color: #fff; display: block; }
 
 #main-contents h4 a:hover,
 #main-contents h4 a:active{ color: #f60; }
@@ -1631,10 +1631,14 @@ a.btn5{
 }
 
 h2.question-color{
-	color: #fff !important;
 	font-weight: bold;
-	background: #2f4f4f;
-	border-radius:  10px;
+}
+
+h4.panel-title{
+	background: #00ccaa !important;
+	border: none;
+	border-radius: 5px;
+	color: #fff !important;
 }
 
 /* レスポンシブ */
