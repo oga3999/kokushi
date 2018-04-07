@@ -312,29 +312,29 @@ a{
 ページトップ
 --------------------------------------------------------*/
 
-.page-top{
-	right: 0;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
-}
+/*.page-top{*/
+/*	right: 0;*/
+/*	bottom: 0;*/
+/*	width: 100%;*/
+/*	text-align: center;*/
+/*}*/
 
-.page-top a{
-	display: block;
-	border: 0;
-	border-top: 1px solid #fff;
-	border-radius: 0;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-}
+/*.page-top a{*/
+/*	display: block;*/
+/*	border: 0;*/
+/*	border-top: 1px solid #fff;*/
+/*	border-radius: 0;*/
+/*	-webkit-border-radius: 0;*/
+/*	-moz-border-radius: 0;*/
+/*}*/
 
-.page-top a:link,
-.page-top a:visited,
-.page-top a:hover,
-.page-top a:active{
-	background: url(../images/common/bg-pagetop.gif) 14px center no-repeat #333;
-	color: #fff;
-}
+/*.page-top a:link,*/
+/*.page-top a:visited,*/
+/*.page-top a:hover,*/
+/*.page-top a:active{*/
+/*	background: url(../images/common/bg-pagetop.gif) 14px center no-repeat #333;*/
+/*	color: #fff;*/
+/*}*/
 
 .page-top:not(\*|*){ position: static; }/* Opera9以下 */
 

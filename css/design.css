@@ -5,8 +5,7 @@
 1、サイト全体の背景設定
 ------------------------------------------------------*/
 
-#container{ background: url(../images/common/bg-dot.png) #333; } /*背景色の上に透過された小さなドットを配置*/
-* html #container{ background: #333; } /* IE6 */
+
 
 /*--------------------------------------------------------
 2、サイト全体の共通設定
@@ -18,12 +17,13 @@ body{ color: #333; }
 a{ text-decoration: none; }
 
 a:link,
-a:visited{ color: #00b; }
+a:visited{ color: #008080; }
 a:hover,
 a:active{ color: #f60; }
 a .prosthetics{
     display: block;
     margin: 1.5em 0 0 0;
+    text-decoration: none;
 }
 /*--------------------------------------------------------
 3、エリアの設定
@@ -31,7 +31,7 @@ a .prosthetics{
 
 #container{
 	position: relative;
-	padding-top: 25px;
+	/*padding-top: 25px;*/
 }
 
 
@@ -121,10 +121,7 @@ a .prosthetics{
 グローバルナビ
 --------------------------------------------------------*/
 
-#global-nav{
-	border-top: 1px solid #555; /*メニュー上のラインの設定*/
-	border-bottom: 3px solid #40ad3b; /*メニュー下のラインの設定*/
-}
+
 
 #global-nav dl{
 	margin-top: 0;
@@ -167,17 +164,14 @@ margin: auto;
 #global-nav #menu li a{
 	display: block;
 	padding: 1.2em 3em 1.2em 2em;
-	background: url(../images/icon/icon-gnav.png) 0.5em center no-repeat;
+	/*background: url(../images/icon/icon-gnav.png) 0.5em center no-repeat;*/
 	color: #fff;
 	text-decoration: none;
 }
 
 #global-nav #menu li a:hover,
 #global-nav #menu li a:active{
-	background-color: #757575; /*マウスカーソルを乗せた時、クリック時の背景色*/
-	filter: alpha(opacity=70); /* ie8以下用の透明度を設定 */
-	-moz-opacity: 0.7; /* Firefox用の透明度を設定 */
-	opacity: 0.7; /* 透明度を設定 */
+	text-decoration: underline;
 }
 
 /*ドロップダウンメニューのデザイン*/
@@ -227,7 +221,8 @@ margin: auto;
 --------------------------------------------------------*/
 
 #main{
-	background-color: #f0f0f0; /*背景を指定*/
+	background-color: #f9fbfe; /*背景を指定*/
+	padding-top: 60px;
 }
 
 #main-in{
@@ -323,12 +318,16 @@ margin: auto;
 
 /*●H2タグ*/
 #main-contents h2{
-    margin: 0.4em 0 0.5em 0;
+    margin: .5em 0 0.5em 0;
 	padding: 0.3em 0.5em;
-	border-left: 28px solid #40ad3b;
-	background: url(../images/common/bg-dot.png) #333;
-	color: #fff;
-	font-size: 1.429em;
+	border-left: 28px solid #2f4f4f;
+ 	border-right: 28px solid #2f4f4f;
+ 	border-top:1px solid #2f4f4f;
+  	border-bottom:1px solid #2f4f4f;
+  	text-align:center; 
+	/*background: url(../images/common/bg-dot.png) #333;*/
+	color: #2f4f4f;
+	font-size: 1.75em;
 }
 
 * html #main-contents h2{ background: #333; } /* IE6 */
@@ -375,10 +374,11 @@ margin: auto;
 
 /*●H4タグ*/
 #main-contents h4{
-	margin: 0 0 1.5em;
+	margin: 0 0 0.5em;
 	padding: 0.8em;
 	border: 1px solid #8e8e8e;
 	font-weight: bold;
+	font-size:18px;
 }
 
 #main-contents h4 a:link,
@@ -1196,8 +1196,8 @@ margin: auto;
 #footer{
 	clear: both;
 	padding: 20px 0px;
-	border-bottom: 1px solid #000; /*フッターの最下部のボーダーの指示*/
-	background: url(../images/common/bg-dot.png) #333; /*フッター全体の背景を指定*/
+	border-bottom: 1px solid #c0c0c0; /*フッターの最下部のボーダーの指示*/
+	background: #2f4f4f;/*フッター全体の背景を指定*/
 	color: #fff; /*文字色の指定*/
 	font-size: 1.2em;
 }
@@ -1301,8 +1301,8 @@ p.accessmap{
 /*●コピーライト*/
 .copyright{
 	padding: 15px 0;
-	border-top: 1px solid #555;
-	background: url(../images/common/bg-dot.png) #333;
+	/*border-top: 1px solid #555;*/
+	background: #2f4f4f;
 	color: #fff;
 	font-size: 1.2em;
 	text-align: center;
@@ -1317,24 +1317,22 @@ p.accessmap{
 
 .page-top{
 	position: fixed;
-	right: 0;
+	right: 30px;
 	bottom: 20px;
 	z-index: 99;
-	width: 182px;
+	width: 50px;
 	color: #fff;
-	font-size: 1.2em;
+	font-size: 3em;
 	font-weight: bold;
-	text-align: left;
+	text-align: center;
+	line-height: 65px;
+	border-radius: 50%;
 }
 
 * html .page-top{ display: none; }
 
 .page-top a{
 	display: block;
-	padding: 10px;
-	padding-left: 42px;
-	border: 1px solid #fff;
-	border-right: 0;
 	text-decoration: none;
 	border-top-left-radius: 8px;
 	border-bottom-left-radius: 8px;
@@ -1342,18 +1340,22 @@ p.accessmap{
 	-webkit-border-bottom-left-radius: 8px;
 	-moz-border-radius-topleft: 8px;
 	-moz-border-radius-bottomleft: 8px;
+	height: 70px;
+    width: 70px;
+    right: 10px;
+    border-radius: 50%;
 }
 
 .page-top a:link,
 .page-top a:visited{
-	background: url(../images/common/bg-pagetop.gif) 14px center no-repeat #333;
+	background: #708090;
 	color: #fff;
+	opacity: 0.7;
 }
 
 .page-top a:hover,
 .page-top a:active{
-	background: url(../images/common/bg-pagetop.gif) 14px center no-repeat #fc6;
-	color: #f60;
+	opacity: .9;
 }
 
 
@@ -1468,11 +1470,11 @@ a .navbar-brand:hover {
 }
 
 .navbar-toggler {
-  border-color: #fff;
-  width: 100%;
+  /*border-color: #fff;*/
+  /*width: 100%;*/
 }
 .btn-div {
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .fa.fa-bars {
@@ -1511,10 +1513,23 @@ a.top-btn{
 }
 .top-btn {
     margin-bottom: 12px;
-    margin-left: 17px;
+    /* margin-left: 17px; */
+    width: 100%;
+    height: 80px;
+    line-height: 78px;
+    font-size: 20px;
+    padding:0px;
 }
 a.top-btn:hover {
     color: #ffffff; 
+}
+
+.question-btn{
+	 margin-bottom: 12px;
+    /* margin-left: 17px; */
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 5px;
 }
 
 /*navを中央表示*/
@@ -1530,9 +1545,96 @@ a.top-btn:hover {
 }
 
 /*nav背景統一*/
-nav.navbar,
-#navbarNav {
-  background: url(../images/common/bg-dot.png) #333;
+nav.navbar {
+  /*background: url(../images/common/bg-dot.png) #333;*/
+  background: rgba(0,139,139,.8);
+}
+
+/*ナビバーとジャンボトロン バランス調整*/
+.nav-jam{
+	height: 35px;
+}
+
+.jumbotron {
+	background: linear-gradient(-90deg, rgba(15,52,67,.7),rgba(52,232,158,.7)),url(../images/forestflare.jpg);
+	margin-top: 63px;
+	margin-bottom:0px;
+}
+
+.display-4,
+.lead {
+	color: #fff;
+}
+
+a.btn1,a.btn2,a.btn3,a.btn4,a.btn5,a.btn6{
+	color: #fff;
+	font-weight: bold;
+	border: none;
+}
+
+a.btn1{
+	background: #ffe449;
+}
+
+a.btn2{
+	background: #4ccfc9;
+}
+
+a.btn3{
+	background: #ff8db3;
+}
+
+a.btn4{
+	background: #4ccfc9;
+}
+
+a.btn5{
+	background:#ff637f;
+}
+
+.top-number{
+	font-size: 25px;
+}
+
+.top-number p{
+	border-bottom: 2px solid #2f4f4f;
+}
+
+.number{
+	border-bottom: 2px solid #FF8C00;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.description{
+	font-size: 30px;
+	color:#2f4f4f;
+	margin-top: 40px;
+	text-align:center;
+}
+
+.top-color{
+	color: #FF4500;
+	font-weight: bold
+}
+
+.question-box,.top-row{
+	margin-bottom: 3em;
+}
+
+.fixed-top{
+	/*height:63px;*/
+}
+
+.panel-body{
+	margin-bottom: 20px;
+}
+
+h2.question-color{
+	color: #fff !important;
+	font-weight: bold;
+	background: #2f4f4f;
+	border-radius:  10px;
 }
 
 /* レスポンシブ */
@@ -1542,9 +1644,12 @@ nav.navbar,
   .twitter-phone {
     display: none;
   }
+  	.top-number br{
+		display: none;
+	}
 }
 
-@media(min-width:544px){
+@media(min-width:576px){
   .phone-brand br,
   .facebook-phone,
   .facebook-iphonese{
@@ -1553,6 +1658,9 @@ nav.navbar,
   .btn-div {
     margin: 0 auto;
     width: 70%;
+  }
+  .jumbotron{
+  	padding: 13rem 2rem;
   }
 }
 
@@ -1620,13 +1728,27 @@ nav.navbar,
     color: #fff;
     font-size: 15px;
   }
+  	.description{
+		font-size:20px;
+		text-align:left;
+	}
+	.top-number p{
+	border-bottom: none;
+	}
 }
 
-@media(max-width:330px){
+@media(max-width:380px){
 	.facebook-phone {
 		display: none;	
 	}
 	.facebook-iphonese {
 		display: block;
 	}
+	.jumbotron{
+		margin-top:56px;
+	}
+	.description{
+		font-size:20px;
+	}
+
 }
