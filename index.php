@@ -284,21 +284,6 @@
                             <!--△メインコンテンツ-->
 
 
-                            <!--▽サブコンテンツ-->
-                        <dl id="sub-contents" class="sub-column">
-                            <dt class="sub-contents-btn">サブコンテンツ</dt>
-                            <dd id="sub-contents-in">
-
-
-
-                                <hr />
-
-
-
-
-                            </dd>
-                        </dl>
-                        <!--△サブコンテンツ-->
 
 
                     </div>
@@ -388,35 +373,35 @@
 <div id="footer-in">
 <div class="container">
 <div class="row">
-  <div class="col-12 col-sm-12 col-md-4">
+  <div class="col-12 col-sm-12 col-md-2 offset-md-1">
     <a href="/">
       <div class="footer-box">
         ホーム
       </div>
     </a>
   </div>
-  <div class="col-6 col-sm-6 col-md-4">
+  <div class="col-6 col-sm-6 col-md-2">
     <a href="about/">
       <div class="footer-box">
         おすすめ参考書
       </div>
     </a>
   </div>
-  <div class="col-6 col-sm-6 col-md-4">
+  <div class="col-6 col-sm-6 col-md-2">
     <a href="link/">
       <div class="footer-box">
       リンク集
       </div>
     </a>
   </div>
-  <div class="col-6 col-sm-6 col-md-4">
+  <div class="col-6 col-sm-6 col-md-2">
     <a href="sitemap/">
       <div class="footer-box">
         サイトマップ
       </div>
     </a>
   </div>
-  <div class="col-6 col-sm-6 col-md-4">
+  <div class="col-6 col-sm-6 col-md-2">
     <a href="privacy-policy/">
       <div class="footer-box">
         個人情報保護方針
