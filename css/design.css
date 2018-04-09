@@ -228,6 +228,7 @@ margin: auto;
 #main-in{
 	padding-top: 1em;
 	padding-bottom: 1em;
+	min-height: 500px;
 }
 
 
