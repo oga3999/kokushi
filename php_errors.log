@@ -1,0 +1,21 @@
+[13-Apr-2018 11:23:01 UTC] PHP Fatal error:  Call to undefined function qmTitle() in /home/ubuntu/workspace/kokushi/test/que.php on line 164
+[13-Apr-2018 11:23:01 UTC] PHP Stack trace:
+[13-Apr-2018 11:23:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/kokushi/test/que.php:0
+[13-Apr-2018 11:28:12 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/kokushi/test../qmApp/view.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/kokushi/test/que.php on line 2
+[13-Apr-2018 11:28:12 UTC] PHP Stack trace:
+[13-Apr-2018 11:28:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/kokushi/test/que.php:0
+[13-Apr-2018 11:28:12 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/kokushi/test../qmApp/view.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/kokushi/test/que.php on line 2
+[13-Apr-2018 11:28:12 UTC] PHP Stack trace:
+[13-Apr-2018 11:28:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/kokushi/test/que.php:0
+[13-Apr-2018 11:29:07 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/kokushi/test../qmApp/view.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/kokushi/test/que.php on line 2
+[13-Apr-2018 11:29:07 UTC] PHP Stack trace:
+[13-Apr-2018 11:29:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/kokushi/test/que.php:0
+[13-Apr-2018 11:29:07 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/kokushi/test../qmApp/view.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/kokushi/test/que.php on line 2
+[13-Apr-2018 11:29:07 UTC] PHP Stack trace:
+[13-Apr-2018 11:29:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/kokushi/test/que.php:0
+[13-Apr-2018 13:10:51 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/kokushi/test../qmApp/view.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/kokushi/test/que.php on line 2
+[13-Apr-2018 13:10:51 UTC] PHP Stack trace:
+[13-Apr-2018 13:10:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/kokushi/test/que.php:0
+[13-Apr-2018 13:10:51 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/kokushi/test../qmApp/view.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/kokushi/test/que.php on line 2
+[13-Apr-2018 13:10:51 UTC] PHP Stack trace:
+[13-Apr-2018 13:10:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/kokushi/test/que.php:0

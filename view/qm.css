@@ -33,9 +33,9 @@ a{text-decoration:none;}
 	
 	/* HTML5対応 角丸*/	
 	border: solid #005b5b;
-	border-radius:6px;
-	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
+	/*border-radius:3px;*/
+	/*-moz-border-radius: 3px;*/
+	/*-webkit-border-radius: 3px;*/
     margin: 1em 0 1em 0;
 }
 
@@ -55,7 +55,7 @@ a{text-decoration:none;}
 */
 #qm-num-of-question{
 	font-size:18px;
-	color: #855;
+	color: #dc143c;
 	margin: 0 2em auto;
 	padding-left: 1em;
 }
@@ -87,8 +87,10 @@ div#qm-exam-description{
 *　採点結果
 */
 .qm-ans-point{
-	margin:0;
+	margin:10px 0px;
 	padding:0;
+    text-align: center;
+    font-size: 20px;
 }
 
 
@@ -105,6 +107,7 @@ ul.qm-exam{
 li.qm-exam{
 	background: #fffafa;
 	/* 角丸処理あり下記 角丸処理 参照 */
+	box-shadow: 1px 0 5px 1px #d3d3d3;
 }
 
 
@@ -114,8 +117,9 @@ li.qm-exam{
 .qm-question-number{
 	color:#f0ffff;
 	font-weight: bold;
-	background-color:#005B5B;
-	padding: 2px;
+	background-color:#008080;
+	padding: 5px;
+	font-size: 20px;
 	/* 角丸処理あり下記 角丸処理 参照 */	
 }
 
@@ -131,6 +135,7 @@ li.qm-exam{
 */
 .qm-a-question{
 	font-weight:bold;
+	font-size: 15px;
 }
 
 /*
@@ -140,9 +145,9 @@ p.qm-question-branch{
 	margin:0 0 0 1em;
 	padding:0;
 	width: 90%;
+	font-size:14px;
+	margin-bottom: 1em !important;
 }
-
-
 
 /*
 *ページ処理エリアCSS定義
@@ -156,7 +161,7 @@ p.qm-question-branch{
 .qm-page{
 	width: 100px;
 	height: 50px;
-	background:#333;
+	background:#2F4F4F;
 	float:left;
 	text-align:center;
 	margin: 0px 5px 15px 5px;    
@@ -200,8 +205,8 @@ div.qm-page-retry{
 */
 .qm-page-home{}
 div.qm-page-home{
-	padding-top: 1em;
-	color:#CCC;
+	line-height: 50px;
+	color:#fff;
 	font-weight: bold;
 }
 
@@ -222,9 +227,9 @@ div.qm-page-home{
 */
 .qm-bt-caption{
 	display:block;
-	font-size:14px;
+	font-size:15px;
 	font-weight:bold;
-	color:#e8e8ff;
+	color:#fff;
 	position:relative;
 	top:-34px;
 }
@@ -364,9 +369,11 @@ hr.qm-sep-line{
 .qm-radius-5
 {
 	border-style:none;
-	border-radius:5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
+	/*border-radius:5px;*/
+	/*-moz-border-radius: 5px;*/
+	/*-webkit-border-radius: 5px;*/
+	font-size: 15px;
+    margin-bottom: 0.5em !important;
 }
 
 
@@ -378,18 +385,18 @@ hr.qm-sep-line{
 .qm-radius-10
 {
 	border-style:none;
-	border-radius:10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
+	border-radius:5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 }
 
 
 /* HTML5対応 グラデーションパターン*/	
 .grad01{
-background: #333; /* Old browsers */ /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */
-background: linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
+background: #2F4F4F; /* Old browsers */ /* FF3.6+ */
+/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ 
+background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ 
+background: linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* W3C 
 }
 
 /* HTML5対応 グラデーションパターン*/	

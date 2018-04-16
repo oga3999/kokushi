@@ -68,14 +68,12 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
 </div>
 <!--▲ヘッダー-->
 
-
-
-<!--▼グローバルナビ-->
-<!--↓⑦新しいグローバルナビを追加-->
+ <!--▼グローバルナビ-->
+            <!--↓⑦新しいグローバルナビを追加-->
       <div id="global-nav">
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="fixed-top navbar navbar-expand-lg ">
 <!--                                                                        ↓⑭<br/>を追加-->
-          <a class="navbar-brand phone-brand" href="../">理学療法士・作業療法士 <br/> 国家試験対策　WEBで合格！</a>
+          <a class="navbar-brand phone-brand" href="/">PT・OT国試対策</a>
 <!--                                                                        ↑⑭<br/>を追加-->
 
             <div class="btn-div">
@@ -86,7 +84,7 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul id="menu" class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="../">ホーム <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="/">ホーム <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                   <a class="nav-link" href="../item/">PT/OT共通問題 <span class="sr-only">(current)</span></a>
@@ -97,25 +95,10 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
                 <li class="nav-item active">
                   <a class="nav-link" href="../about/">おすすめ参考書 <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="../news/">メルマガ登録 <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="../link/">リンク集 <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active phone-nav">
-                  <a href="../sitemap/">サイトマップ</a>
-                </li>
-                <li class="nav-item active phone-nav">
-                  <a href="../privacy-policy/">個人情報保護方針</a>
-                </li>
               </ul>
             </div>
         </nav>
       </div>
-<!--↑⑦新しいグローバルナビを追加-->
-<!--▲グローバルナビ-->
-
 
 <!--main-->
 <div id="main">
@@ -137,7 +120,7 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
                       <div class="row">
                   <!--↑⑨containerとrowのdivを追加　パン屑をその間に追加-->
                   <!--↓⑩col-md-8をmain-contentやtitle_strageを囲うように追加-->
-                        <div class="col-md-8">
+                        <div class="col-md-10 offset-md-1">
                   <!--↑⑩col-md-8をmain-contentやtitle_strageを囲うように追加-->
         <div class="tile_storage">
 <!--▽メインコンテンツ-->
@@ -174,9 +157,12 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
 
         <?php if( qmIsAnswerMode() ){ ?>
         <div id="qm-point-area">
-        <h5 class="qm-verify-comment">採点結果</h5>
+        <!--<h5 class="qm-verify-comment">採点結果</h5>-->
         <h5 class="qm-ans-point">
-        <?php qmAnsPointArea( '<%NUM-ALLQUESTION%>問中<%NUM-CORRECTANS%>問正解でした。正解率は<%ANSPERCENT%>%でした。');?>
+        <?php qmAnsPointArea( '<%NUM-ALLQUESTION%>問中<%NUM-CORRECTANS%>問正解');?>
+        </h5>
+        <h5 class="qm-ans-point">
+        <?php qmAnsPointArea( '正解率：<%ANSPERCENT%>%');?>
         </h5>
         </div>
         <?php } ?>
@@ -201,54 +187,112 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
 </div>
     
 <h2>PT/OT共通問題</h2>
-                            <div class="row">
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item01/" role="button">解剖学</a>
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item02/" role="button">生理学</a>
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item03/" role="button">運動学</a>
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item04/" role="button">病理学</a>
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item05/" role="button">内科学</a>
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item06/" role="button">神経内科学</a>
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item07/" role="button">整形外科学</a>
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item08/" role="button">人間発達学</a>
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item09/" role="button">リハ概論・医学</a>
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item10/" role="button">精神医学</a>
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item11/" role="button">心理学</a>
+                              <div class="row question-box">
+                              <div class="col-md-3 col-6">
+                              <a class=" btn btn-outline-secondary top-btn btn1" href="item01/" role="button">解剖学</a>
+                              </div>
+                              <div class="col-md-3 col-6">
+                              <a class=" btn btn-outline-secondary top-btn btn1" href="item02/" role="button">生理学</a>
+                              </div>
+                              <div class="col-md-3 col-6">
+                              <a class=" btn btn-outline-secondary top-btn btn1" href="item03/" role="button">運動学</a>
+                              </div>
+
+                              <div class="col-md-3 col-6">
+                              <a class=" btn btn-outline-secondary top-btn btn1" href="item04/" role="button">病理学</a>
+                              </div>
+
+                              <div class="col-md-3 col-6">
+                              <a class=" btn btn-outline-secondary top-btn btn2" href="item05/" role="button">内科学</a>
+                              </div>
+
+                              <div class="col-md-3 col-6">
+                              <a class=" btn btn-outline-secondary top-btn btn2" href="item06/" role="button">神経内科学</a>
+                              </div>
+
+                              <div class="col-md-3 col-6">
+                              <a class=" btn btn-outline-secondary top-btn btn2" href="item07/" role="button">整形外科学</a>
+                              </div>
+
+                              <div class="col-md-3 col-6 ">
+                              <a class=" btn btn-outline-secondary top-btn btn2" href="item08/" role="button">人間発達学</a>
+                              </div>
+
+                              <div class="col-md-3 col-6">
+                              <a class=" btn btn-outline-secondary top-btn btn3" href="item09/" role="button">リハ概論・医学</a>
+                              </div>
+
+                              <div class="col-md-3 col-6">
+                              <a class=" btn btn-outline-secondary top-btn btn3" href="item10/" role="button">精神医学</a>
+                              </div>
+
+                              <div class="col-md-3 col-6">
+                              <a class=" btn btn-outline-secondary top-btn btn3" href="item11/" role="button">心理学</a>
+                              </div>
+
                             </div>
                             <h2>PT専門問題</h2>
-                            <div class="row">
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item12/" role="button">理学療法評価学</a>
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item13/" role="button">臨床運動学</a>
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item14/" role="button">ADL</a>
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item15/" role="button">義肢装具学</a>
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item16/" role="button">物理療法学</a>
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item17/" role="button">法律・その他</a>
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item18/" role="button">整形外科疾患</a>
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item19/" role="button">脊髄損傷</a>
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item20/" role="button">脳血管障害</a>
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item21/" role="button">神経筋疾患</a>
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item22/" role="button">内科系疾患</a>
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item23/" role="button">小児疾患</a>
-                              <a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="../item/item24/" role="button">運動療法総論</a>
+                           
+                            <div class="row question-box">
+                              <div class="col-md-3 col-6">
+                                <a class="btn btn-outline-secondary top-btn btn1" href="../item/item12" role="button">理学療法評価額</a>
+                              </div>
+                              <div class="col-md-3 col-6">
+                                <a class="btn btn-outline-secondary top-btn btn1" href="../item/item13/" role="button">臨床運動学</a>
+                              </div>
+                              <div class="col-md-3 col-6">
+                                <a class="btn btn-outline-secondary top-btn btn1" href="../item/item14/" role="button">ADL</a>
+                              </div>
+                              <div class="col-md-3 col-6">
+                                <a class="btn btn-outline-secondary top-btn btn1" href="../item/item15/" role="button">義肢装具学</a>
+                              </div>
+                              <div class="col-md-3 col-6">
+                                <a class="btn btn-outline-secondary top-btn btn2" href="../item/item16/" role="button">物理療法学</a>
+                              </div>
+                              <div class="col-md-3 col-6">
+                                <a class="btn btn-outline-secondary top-btn btn2" href="../item/item17/" role="button">法律・その他</a>
+                              </div>
+                              <div class="col-md-3 col-6">
+                                <a class="btn btn-outline-secondary top-btn btn2" href="../item/item18/" role="button">整形外科疾患</a>
+                              </div>                              
+                              <div class="col-md-3 col-6">
+                                <a class="btn btn-outline-secondary top-btn btn2" href="../item/item19/" role="button">脊髄損傷</a>
+                              </div>  
+                              <div class="col-md-3 col-6">
+                                <a class="btn btn-outline-secondary top-btn btn3" href="../item/item20/" role="button">脳血管障害</a>
+                              </div>
+                              <div class="col-md-3 col-6">
+                                <a class="btn btn-outline-secondary top-btn btn3" href="../item/item21/" role="button">神経筋疾患</a>
+                              </div>                              
+                              <div class="col-md-3 col-6">
+                                <a class="btn btn-outline-secondary top-btn btn3" href="../item/item22/" role="button">内科系疾患</a>
+                              </div>                              
+                              <div class="col-md-3 col-6">
+                                <a class="btn btn-outline-secondary top-btn btn3" href="../item/item23/" role="button">小児疾患</a>
+                              </div>
+                              <div class="col-md-3 col-6">
+                                <a class="btn btn-outline-secondary top-btn btn3" href="../item/item24/" role="button">運動療法総論</a>
+                              </div>                              
                               <!---<a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="/item/item25/" role="button">第48回国試問題</a>--->
                             </div>
 </div>
-<div class="content">
+<!--<div class="content">-->
 <!--↓SNSボタンの設置-->
-              <div class="ninja_onebutton">
-                                <script type="text/javascript">
-                                //<![CDATA[
-                                (function(d){
-                                if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_1baebd94db7f41d8c24f5ac5059a1e78)=='undefined'){
-                                    document.write("<sc"+"ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/1baebd94db7f41d8c24f5ac5059a1e78'><\/sc"+"ript>");
-                                }else{
-                                    window.NINJA_CO_JP_ONETAG_BUTTON_1baebd94db7f41d8c24f5ac5059a1e78.ONETAGButton_Load();}
-                                })(document);
-                                //]]>
-                                </script><span class="ninja_onebutton_hidden" style="display:none;"></span><span style="display:none;" class="ninja_onebutton_hidden"></span>
-            　</div>
-</div>
+<!--              <div class="ninja_onebutton">-->
+<!--                                <script type="text/javascript">-->
+<!--                                <![CDATA[-->
+<!--                                (function(d){-->
+<!--                                if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_1baebd94db7f41d8c24f5ac5059a1e78)=='undefined'){-->
+<!--                                    document.write("<sc"+"ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/1baebd94db7f41d8c24f5ac5059a1e78'><\/sc"+"ript>");-->
+<!--                                }else{-->
+<!--                                    window.NINJA_CO_JP_ONETAG_BUTTON_1baebd94db7f41d8c24f5ac5059a1e78.ONETAGButton_Load();}-->
+<!--                                })(document);-->
+<!--                              ]]>-->
+<!--                                </script><span class="ninja_onebutton_hidden" style="display:none;"></span><span style="display:none;" class="ninja_onebutton_hidden"></span>-->
+<!--            　</div>-->
+<!--</div>-->
 <!--↑SNSボタンの設置-->
-<br />
+<!--<br />-->
     <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
     <!-- 国試サイトリンクユニット -->
     <!-- <ins class="adsbygoogle"
@@ -258,41 +302,42 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script> -->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
     <!-- 国試サイト336×280 -->
-    <ins class="adsbygoogle"
-         style="display:inline-block;width:336px;height:280px"
-         data-ad-client="ca-pub-9635019046613020"
-         data-ad-slot="8911946195"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+    <!--<ins class="adsbygoogle"-->
+    <!--     style="display:inline-block;width:336px;height:280px"-->
+    <!--     data-ad-client="ca-pub-9635019046613020"-->
+    <!--     data-ad-slot="8911946195"></ins>-->
+    <!--<script>-->
+    <!--    (adsbygoogle = window.adsbygoogle || []).push({});-->
+    <!--</script>-->
 <!--ランキング-->
-          <div class="contents">
+          <!--<div class="contents">-->
 
               <!--conts-->
-<h2>音声で学ぶシリーズ</h2>
-<a href="https://www.dlmarket.jp/products/detail/476576" target="_blank"><img src="../../images/onsei.png" alt="onsei" width="503" height="208" /></a><br />
-    <p class="study-series">音声で学ぶシリーズ</p>
-          <ul class="onsei_serise">
-              <li><a href="https://www.dlmarket.jp/products/detail/475371" target="_blank">音声で学ぶ国家試験　解剖学</a></li>
-              <li><a href="https://www.dlmarket.jp/products/detail/475370" target="_blank">音声で学ぶ国家試験　生理学</a></li>
-              <li><a href="https://www.dlmarket.jp/products/detail/475369" target="_blank">音声で学ぶ国家試験　運動学</a></li>
-              <li><a href="https://www.dlmarket.jp/products/detail/476576" target="_blank">音声で学ぶ国家試験シリーズパック</a></li>
-              <li>国家試験を耳で聞いて学ぶ！</li>
-            </ul> <!--/conts-->
+<!--<h2>音声で学ぶシリーズ</h2>-->
+<!--<a href="https://www.dlmarket.jp/products/detail/476576" target="_blank"><img src="../../images/onsei.png" alt="onsei" width="503" height="208" /></a><br />-->
+<!--    <p class="study-series">音声で学ぶシリーズ</p>-->
+<!--          <ul class="onsei_serise">-->
+<!--              <li><a href="https://www.dlmarket.jp/products/detail/475371" target="_blank">音声で学ぶ国家試験　解剖学</a></li>-->
+<!--              <li><a href="https://www.dlmarket.jp/products/detail/475370" target="_blank">音声で学ぶ国家試験　生理学</a></li>-->
+<!--              <li><a href="https://www.dlmarket.jp/products/detail/475369" target="_blank">音声で学ぶ国家試験　運動学</a></li>-->
+<!--              <li><a href="https://www.dlmarket.jp/products/detail/476576" target="_blank">音声で学ぶ国家試験シリーズパック</a></li>-->
+<!--              <li>国家試験を耳で聞いて学ぶ！</li>-->
+<!--            </ul> -->
+            <!--/conts-->
 
 
 <!--conts-->
-<h2><a name="facebook" id="facebook">Facebookで国試好評配信中！</a></h2>
-<a href="https://www.facebook.com/ptotkokushi" target="_blank"><img src="../../images/fb.png" alt="facebook" width="503" height="208" /></a><br />
-        <a class="study_facebook" href="https://www.facebook.com/ptotkokushi" target="_blank">理学療法士・作業療法士国家試験対策 WEBで合格！Facebook</a>
-          <ul>
-            <li>Facebookのタイムラインに共通問題の中からランダムで一問、国試過去問を配信。翌日に解答も配信しています。LINEアプリをインストールしていればリンク先をワンクリックでOK!<br />
-           </li>
-          </ul> <!--/conts-->
+<!--<h2><a name="facebook" id="facebook">Facebookで国試好評配信中！</a></h2>-->
+<!--<a href="https://www.facebook.com/ptotkokushi" target="_blank"><img src="../../images/fb.png" alt="facebook" width="503" height="208" /></a><br />-->
+<!--        <a class="study_facebook" href="https://www.facebook.com/ptotkokushi" target="_blank">理学療法士・作業療法士国家試験対策 WEBで合格！Facebook</a>-->
+<!--          <ul>-->
+<!--            <li>Facebookのタイムラインに共通問題の中からランダムで一問、国試過去問を配信。翌日に解答も配信しています。LINEアプリをインストールしていればリンク先をワンクリックでOK!<br />-->
+<!--           </li>-->
+<!--          </ul>-->
 
-</div>
+<!--</div>-->
 
 <!--/ランキング-->
 
@@ -320,31 +365,31 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
 
 <!--▼サイドバー-->
 <!--⑪↓ サイドバーの一番外側にcol-md-4のdivを追加-->
-  <div class="col-md-4">
+  <!--<div class="col-md-4">-->
 <!--⑪↑ サイドバーの一番外側にcol-md-4のdivを追加-->
-<div class="tile_storage">
-      <dl id="sidebar" class="sub-column">
-        <dd id="sidebar-in">
-        <div class="contents">
-          <h3>オリジナル教材</h3>
-            <p class="profile-img"><a href="https://www.dlmarket.jp/products/detail/475376" target="_blank"><img src="../../images/kanban10.jpg" width="162" height="162" alt="プロフィール画像" /></a></p>
-          <div class="profile-txt">
-            <p>筋肉の起始停止だけでなく主な作用や支配神経も含みます。</p>
-          </div>
-        </div>
+<!--<div class="tile_storage">-->
+<!--      <dl id="sidebar" class="sub-column">-->
+<!--        <dd id="sidebar-in">-->
+<!--        <div class="contents">-->
+<!--          <h3>オリジナル教材</h3>-->
+<!--            <p class="profile-img"><a href="https://www.dlmarket.jp/products/detail/475376" target="_blank"><img src="../../images/kanban10.jpg" width="162" height="162" alt="プロフィール画像" /></a></p>-->
+<!--          <div class="profile-txt">-->
+<!--            <p>筋肉の起始停止だけでなく主な作用や支配神経も含みます。</p>-->
+<!--          </div>-->
+<!--        </div>-->
         <!--メニュー-->
 
-<div class="contents">
-<h3>連携サイト｢POST｣</h3>
-          <p class="profile-img"><a href="http://1post.jp/" target="_blank"><img src="../../images/post.jpg" alt="post" /></a>
-</p>
-          <div class="profile-txt">
-<p><br />
-            PT/OT/STとして働く若手療法士や、これから療法士を目指す大学生、専門学生、高校生のためウェブサイトです。当サイトと公式に連携させて頂いており、皆様の支援をしております。参考になる事が多数ありますので是非、ご活用ください！</p><a href="http://1post.jp/" target="_blank">PT・OT・STの働き方・学び方発見サイト</a>
+<!--<div class="contents">-->
+<!--<h3>連携サイト｢POST｣</h3>-->
+<!--          <p class="profile-img"><a href="http://1post.jp/" target="_blank"><img src="../../images/post.jpg" alt="post" /></a>-->
+<!--</p>-->
+<!--          <div class="profile-txt">-->
+<!--<p><br />-->
+<!--            PT/OT/STとして働く若手療法士や、これから療法士を目指す大学生、専門学生、高校生のためウェブサイトです。当サイトと公式に連携させて頂いており、皆様の支援をしております。参考になる事が多数ありますので是非、ご活用ください！</p><a href="http://1post.jp/" target="_blank">PT・OT・STの働き方・学び方発見サイト</a>-->
 
-            <a href="http://1post.jp/">「POST」</a>
-          </div>
-</div>
+<!--            <a href="http://1post.jp/">「POST」</a>-->
+<!--          </div>-->
+<!--</div>-->
 
 
 
@@ -354,34 +399,34 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
 
 
 <!--conts-->
-  <div class="content">
-    <h3>twitter</h3>
-      <a href="https://twitter.com/regakukokushi?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @regakukokushi</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <div class="twitter-pc">
-      <a class="twitter-timeline" data-height="400" data-theme="light" data-link-color="#2B7BB9" data-chrome="noheader" href="https://twitter.com/rigakukokushi?ref_src=twsrc%5Etfw">Tweets by rigakukokushi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-    <div class="twitter-phone">
-      <a class="twitter-timeline" data-width="320" data-height="400" data-chrome="noheader" href="https://twitter.com/rigakukokushi?ref_src=twsrc%5Etfw">Tweets by rigakukokushi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-  </div>
+  <!--<div class="content">-->
+  <!--  <h3>twitter</h3>-->
+  <!--    <a href="https://twitter.com/regakukokushi?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @regakukokushi</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+  <!--  <div class="twitter-pc">-->
+  <!--    <a class="twitter-timeline" data-height="400" data-theme="light" data-link-color="#2B7BB9" data-chrome="noheader" href="https://twitter.com/rigakukokushi?ref_src=twsrc%5Etfw">Tweets by rigakukokushi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+  <!--  </div>-->
+  <!--  <div class="twitter-phone">-->
+  <!--    <a class="twitter-timeline" data-width="320" data-height="400" data-chrome="noheader" href="https://twitter.com/rigakukokushi?ref_src=twsrc%5Etfw">Tweets by rigakukokushi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+  <!--  </div>-->
+  <!--</div>-->
 
 <!--③ここをコピペして、sidebar内へ-->
-                            <div class="content">
-                              <div class="area01">
-                                <h3>facebookでも問題配信中</h3>
-                                <div class="facebook-pc">
-                                  <div class="fb-page" data-href="https://www.facebook.com/ptotkokushi/" data-tabs="timeline" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/ptotkokushi/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ptotkokushi/">理学療法士・作業療法士 国家試験対策 Webで合格！</a></blockquote></div>
-                                </div>
-                                <div class="facebook-phone">
-                                  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fptotkokushi%2F&tabs=timeline&width=320&height=380&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=313237155782985" width="320" height="380" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-                                </div>
-                              </div>
-                            </div>
+                            <!--<div class="content">-->
+                            <!--  <div class="area01">-->
+                            <!--    <h3>facebookでも問題配信中</h3>-->
+                            <!--    <div class="facebook-pc">-->
+                            <!--      <div class="fb-page" data-href="https://www.facebook.com/ptotkokushi/" data-tabs="timeline" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/ptotkokushi/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ptotkokushi/">理学療法士・作業療法士 国家試験対策 Webで合格！</a></blockquote></div>-->
+                            <!--    </div>-->
+                            <!--    <div class="facebook-phone">-->
+                            <!--      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fptotkokushi%2F&tabs=timeline&width=320&height=380&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=313237155782985" width="320" height="380" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>-->
+                            <!--    </div>-->
+                            <!--  </div>-->
+                            <!--</div>-->
 <!--③ここをコピペして、sidebar内へ-->
-<!--/conts--><!--▲サイドバー--></dd>
-      </dl>
-    </div><!-- title_strage -->
-    </div><!-- col-md-4 -->
+<!--/conts--><!--▲サイドバー--><!--</dd>-->
+      <!--</dl>-->
+<!--    </div><!-- title_strage -->
+  <!--  </div><!-- col-md-4 -->
     </div> <!-- row -->
     </div> <!-- container -->
     </div>
@@ -396,89 +441,103 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
 <div id="footer-in">
 <div class="container">
 <div class="row">
-  <div class="col-12 col-sm-12 col-md-4">
-    <a href="../../">
+  <div class="col-12 col-sm-12 col-md-2 offset-md-1">
+    <a href="/">
       <div class="footer-box">
         ホーム
       </div>
     </a>
   </div>
-  <div class="col-6 col-sm-6 col-md-4">
-    <a href="../../about/">
+  <div class="col-6 col-sm-6 col-md-2">
+    <a href="../about/">
       <div class="footer-box">
         おすすめ参考書
       </div>
     </a>
   </div>
-  <div class="col-6 col-sm-6 col-md-4">
-    <a href="../../link/">
+  <div class="col-6 col-sm-6 col-md-2">
+    <a href="../link/">
       <div class="footer-box">
       リンク集
       </div>
     </a>
   </div>
+  <div class="col-6 col-sm-6 col-md-2">
+    <a href="../sitemap/">
+      <div class="footer-box">
+        サイトマップ
+      </div>
+    </a>
+  </div>
+  <div class="col-6 col-sm-6 col-md-2">
+    <a href="../privacy-policy/">
+      <div class="footer-box">
+        個人情報保護方針
+      </div>
+    </a>
+  </div>
 </div>
 
-<div class="row">
-  <div class="col-md-12">
-    <nav class="navbar">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <p class="footer-btn-title">問題を選ぶ</p>
-      </button>
-    </nav>
-    <div class="pos-f-t">
-      <div class="collapse" id="navbarToggleExternalContent">
-        <div class="p-4">
-          <div class="footer-menu">
-            <div class="row">
-              <div class="col-md-3 col-sm-6 col-6">
-                <ul>
-                   <li><a href="../item01/">解剖学</a></li>
-                   <li><a href="../item02/">生理学</a></li>
-                   <li><a href="../item03/">運動学</a></li>
-                   <li><a href="../item04/">病理学</a></li>
-                   <li><a href="../item05/">内科学</a></li>
-                   <li><a href="../item06/">神経内科学</a></li>
-                </ul>
-              </div>
-              <div class="col-md-3 col-sm-6 col-6">
-                <ul>
-                   <li><a href="../item07/">整形外科学</a></li>
-                   <li><a href="../item08/">人間発達学</a></li>
-                   <li><a href="../item09/">リハ概論・リハ医学</a></li>
-                   <li><a href="../item10/">精神医学</a></li>
-                   <li><a href="../item11/">心理学</a></li>
-                   <li><a href="../item12/">理学療法評価学</a></li>
-               </ul>
-             </div>
-             <div class="col-md-3 col-sm-6 col-6">
-              <ul>
-                 <li><a href="../item13/">臨床運動学</a></li>
-                 <li><a href="../item14/">ADL</a></li>
-                 <li><a href="../item15/">義肢装具学</a></li>
-                 <li><a href="../item16/">物理療法学</a></li>
-                 <li><a href="../item17/">法律・その他</a></li>
-                 <li><a href="../item18/">整形外科疾患</a></li>
-               </ul>
-             </div>
-             <div class="col-md-3 col-sm-6 col-6">
-               <ul>
-                 <li><a href="../item19/">脊髄損傷</a></li>
-                 <li><a href="../item20/">脳血管障害</a></li>
-                 <li><a href="../item21/">神経筋疾患</a></li>
-                 <li><a href="../item22/">内科系疾患</a></li>
-                 <li><a href="../item23/">小児疾患</a></li>
-                 <li><a href="../item24/">運動療法総論</a></li>
-                 <li class="end"><a href="/item/item25/">第48回国試問題</a></li>
-               </ul>
-             </div><!--/.col-md-3 col-sm-6 col-6-->
-            </div><!--/.row-->
-          </div><!--/.footer-menu-->
-        </div><!--/.p-4-->
-      </div><!--/.collapse /#navbarToggleExternalContent-->
-    </div><!--/.pos-f-t-->
-  </div><!--/.col-md-12-->
-</div><!--/.row-->
+<!--<div class="row">-->
+<!--  <div class="col-md-12">-->
+<!--    <nav class="navbar">-->
+<!--      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--        <p class="footer-btn-title">問題を選ぶ</p>-->
+<!--      </button>-->
+<!--    </nav>-->
+<!--    <div class="pos-f-t">-->
+<!--      <div class="collapse" id="navbarToggleExternalContent">-->
+<!--        <div class="p-4">-->
+<!--          <div class="footer-menu">-->
+<!--            <div class="row">-->
+<!--              <div class="col-md-3 col-sm-6 col-6">-->
+<!--                <ul>-->
+<!--                   <li><a href="../item01/">解剖学</a></li>-->
+<!--                   <li><a href="../item02/">生理学</a></li>-->
+<!--                   <li><a href="../item03/">運動学</a></li>-->
+<!--                   <li><a href="../item04/">病理学</a></li>-->
+<!--                   <li><a href="../item05/">内科学</a></li>-->
+<!--                   <li><a href="../item06/">神経内科学</a></li>-->
+<!--                </ul>-->
+<!--              </div>-->
+<!--              <div class="col-md-3 col-sm-6 col-6">-->
+<!--                <ul>-->
+<!--                   <li><a href="../item07/">整形外科学</a></li>-->
+<!--                   <li><a href="../item08/">人間発達学</a></li>-->
+<!--                   <li><a href="../item09/">リハ概論・リハ医学</a></li>-->
+<!--                   <li><a href="../item10/">精神医学</a></li>-->
+<!--                   <li><a href="../item11/">心理学</a></li>-->
+<!--                   <li><a href="../item12/">理学療法評価学</a></li>-->
+<!--               </ul>-->
+<!--             </div>-->
+<!--             <div class="col-md-3 col-sm-6 col-6">-->
+<!--              <ul>-->
+<!--                 <li><a href="../item13/">臨床運動学</a></li>-->
+<!--                 <li><a href="../item14/">ADL</a></li>-->
+<!--                 <li><a href="../item15/">義肢装具学</a></li>-->
+<!--                 <li><a href="../item16/">物理療法学</a></li>-->
+<!--                 <li><a href="../item17/">法律・その他</a></li>-->
+<!--                 <li><a href="../item18/">整形外科疾患</a></li>-->
+<!--               </ul>-->
+<!--             </div>-->
+<!--             <div class="col-md-3 col-sm-6 col-6">-->
+<!--               <ul>-->
+<!--                 <li><a href="../item19/">脊髄損傷</a></li>-->
+<!--                 <li><a href="../item20/">脳血管障害</a></li>-->
+<!--                 <li><a href="../item21/">神経筋疾患</a></li>-->
+<!--                 <li><a href="../item22/">内科系疾患</a></li>-->
+<!--                 <li><a href="../item23/">小児疾患</a></li>-->
+<!--                 <li><a href="../item24/">運動療法総論</a></li>-->
+<!--                 <li class="end"><a href="/item/item25/">第48回国試問題</a></li>-->
+<!--               </ul>-->
+      <!--       </div><!--/.col-md-3 col-sm-6 col-6-->
+      <!--      </div><!--/.row-->
+      <!--    </div><!--/.footer-menu-->
+    <!--    </div><!--/.p-4-->
+  <!--    </div><!--/.collapse /#navbarToggleExternalContent-->
+<!--    </div><!--/.pos-f-t-->
+<!--  </div><!--/.col-md-12-->
+<!--</div><!--/.row-->
 </div><!--/.container-->
 </div><!--/#footer-in-->
 </div><!--/#footer-->
