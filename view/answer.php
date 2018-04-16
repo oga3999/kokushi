@@ -54,20 +54,6 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
 <div id="container">
 
 
-<!--▼ヘッダー-->
-<div id="header">
-<div id="header-in">
-
-<div id="header-title">
-<p class="header-logo"><a href="../../">理学療法士国家試験・作業療法士　国家試験対策 WEBで合格！</a></p>
-<h1>理学療法士・作業療法士 国家試験問題の解答</h1>
-</div>
-
-
-</div>
-</div>
-<!--▲ヘッダー-->
-
  <!--▼グローバルナビ-->
             <!--↓⑦新しいグローバルナビを追加-->
       <div id="global-nav">
@@ -148,7 +134,7 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
         <h1 id="qm-title"><?php qmTitle(); ?></h1>
 
         <h1 id="qm-num-of-question" >
-        <span class="qm-comment-title">解答解説</span>
+        <span class="qm-comment-title">　解答解説</span>
         </h1>
 
         <div id="qm-exam-description" >

@@ -44,9 +44,7 @@ a{text-decoration:none;}
 */
 #qm-title{
 	font-size:18px;
-	color: #330;
-	margin: 0 2em auto;
-	
+	color: #330;	
 	float:left;	
 }
 
@@ -54,10 +52,10 @@ a{text-decoration:none;}
 *問題数CSS定義
 */
 #qm-num-of-question{
-	font-size:18px;
-	color: #dc143c;
-	margin: 0 2em auto;
-	padding-left: 1em;
+    font-size: 18px;
+    color: #dc143c;
+    margin-bottom: 15px;
+    padding-left: em;
 }
 
 
