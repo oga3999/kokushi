@@ -169,7 +169,7 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
                             <!--    </script><span class="ninja_onebutton_hidden" style="display:none;"></span><span style="display:none;" class="ninja_onebutton_hidden"></span>-->
                             <!--</div>-->
                             <div class="note col-md-12">
-                            <h2>勉強方法に悩んでいませんか？</h2>
+                            <h2 class="note-h">勉強方法に悩んでいませんか？</h2>
                             <p>国家試験合格に向けて勉強していくにしても、ただがむしゃらに、気合を入れてやっても疲れてしまい続きません。</p>
                             <p>でも、そうは言っても、効率の良い勉強方法なんて知らないし、どうせ続かない･･･        そう思っていませんか？</p>
                             <p>でも、大丈夫です。<span class="note-span">勉強方法を習得することは誰にでもできて</span>、がむしゃらに勉強するよりも<span class="note-span">楽しく継続して勉強ができます！</span></p>

