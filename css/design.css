@@ -1641,6 +1641,15 @@ h4.panel-title{
 	color: #fff !important;
 }
 
+.note{
+	font-size:20px;
+}
+.note-span{
+	color: #FF4500;
+	font-weight: bold;
+}
+
+
 /* レスポンシブ */
 @media(min-width:992px){
   .phone-brand,

