@@ -173,11 +173,14 @@ require_once(dirname(__FILE__).'/../qmApp/view.php');
                             <div class="note col-md-12">
                                                         <h2 class="note-h">少しの投資で、一生ものの勉強法を獲得</h2>
                             <div class="note-container row">
-                              <div class="note-img col-12 col-md-6 col-md-offset-1">
+                              <div class="note-img col-12 col-md-4 col-md-offset-1">
                                 <a href="https://note.mu/ptot_kokushi/n/n8b9e47437ba3"><img src="../images/note-noda.png" style="width:100%;height:auto;"></a>
                               </div>
-                              <div class="note-img col-12 col-md-6 col-md-offset-1">
+                              <div class="note-img col-12 col-md-4 col-md-offset-1">
                                 <a href="https://note.mu/ptot_kokushi/n/nb8a88a31c706"><img src="../images/note-kojima.png" style="width:100%;height:auto;"></a>
+                              </div>
+                              <div class="note-img col-12 col-md-4 col-md-offset-1">
+                                <a href="https://line.me/R/ti/p/%40hel1387e"><img src="../images/line@.png" style="width:100%;height:auto;"></a>
                               </div>
                             </div>
                             </div>
